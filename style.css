@@ -1,0 +1,386 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tajawal", "Outfit", sans-serif;
+}
+
+.slide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease;
+}
+
+.slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.radius-tl {
+  border-radius: 1.25rem 0 1.25rem 1.25rem;
+}
+
+.radius-tr {
+  border-radius: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.radius-tr-2 {
+  border-radius: 0 50px 50px 50px;
+}
+.radius-tr-3 {
+  border-radius: 0 80px 80px 80px;
+}
+
+.radius-tl-2 {
+  border-radius: 50px 0 50px 50px;
+}
+
+.radius {
+  border-radius: 1.25rem 1.25rem 1.25rem;
+}
+
+.hero-shadow {
+  text-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-up {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+/* --- PROJECT CARD STYLES --- */
+.pm-card {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  border-radius: 28px;
+  /* If the card has a background color in Figma, usually white or transparent. 
+               The user's original design had transparent bg but the image had radius.
+               I will keep it transparent unless I see otherwise, but adding radius to card is safe.
+            */
+}
+@media (min-width: 640px) {
+  .pm-card {
+    width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .pm-card {
+    width: 340px;
+  }
+}
+
+.pm-img {
+  border-radius: 0 50px 50px 50px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* slightly softer/larger shadow */
+  background: #f4f4f4;
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+.pm-img img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.pm-card:hover .pm-img img {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+@media (min-width: 640px) {
+  .pm-img img {
+    height: 260px;
+  }
+}
+@media (min-width: 1024px) {
+  .pm-img img {
+    height: 280px;
+  }
+}
+
+/* Content grouping */
+.pm-info {
+  text-align: right; /* Changed from center to right as requested */
+  padding: 0 10px;
+}
+
+/* Pills - wrapper needs to align right too */
+/* The pills are in a flex container in HTML: <div class="flex items-center justify-center gap-2"> */
+/* We need to override that justify-center in HTML or add a class to force it. 
+           Since I can't easily change all HTML again without big replace, I'll assume the user wants me to fix it via CSS if possible, 
+           BUT the flex utility is consistent in HTML. 
+           Wait, I replaced the HTML successfully last time. I should update the HTML to remove `justify-center` or use `justify-start`.
+           Actually, the user asked to "Align content to the right". 
+           Let's just update CSS first. If flex justify-center is inline, CSS rules might difficultly override it without !important.
+           The HTML has `class="flex items-center justify-center gap-2"`.
+           I should update the HTML to `justify-start`.
+        */
+
+.swiper-pagination {
+  display: none !important;
+}
+
+/* Pills */
+.pm-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  color: #b7812a;
+  background: rgba(183, 129, 42, 0.08);
+  border: 1px solid rgba(183, 129, 42, 0.2);
+  white-space: nowrap;
+}
+
+/* Title */
+.pm-title {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937; /* zinc-800 */
+}
+@media (min-width: 640px) {
+  .pm-title {
+    font-size: 20px;
+  }
+}
+
+/* Description */
+.pm-desc {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #6b7280; /* zinc-500 */
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* --- SWIPER STYLES --- */
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  width: auto !important;
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
+}
+
+.swiper-slide {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.swiper-pagination-bullet {
+  background: #b7812a !important;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #b7812a !important;
+}
+
+.filter-btn {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  padding: 8px 14px;
+  border-radius: 0 50px 50px 50px;
+  font-size: 13px;
+  color: #2f2f2f;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+.filter-btn:hover {
+  color: #b7812a;
+  background: rgba(183, 129, 42, 0.1);
+}
+.filter-btn.is-active {
+  background: #b7812a;
+  color: #fff;
+}
+
+.style-item {
+  width: 100%;
+  text-align: right;
+  padding: 10px 14px;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-size: 13px;
+  color: #2f2f2f;
+  background: #fff;
+  transition: 0.2s;
+}
+.style-item:hover {
+  background: rgba(183, 129, 42, 0.1);
+  color: #b7812a;
+}
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+.thumb img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0 50px 50px 50px !important;
+}
+@media (min-width: 640px) {
+  .thumb img {
+    height: 260px;
+  }
+}
+
+.eye-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.25s ease;
+  backdrop-filter: blur(6px);
+  z-index: 5;
+}
+.thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: 0.25s ease;
+  z-index: 4;
+  border-radius: 0 50px 50px 50px;
+}
+.thumb:hover::after {
+  opacity: 1;
+}
+.thumb:hover .eye-btn {
+  opacity: 1;
+}
+
+.eye-tooltip {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 11px;
+  color: #fff;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  opacity: 0;
+  transition: 0.3s ease;
+  z-index: 6;
+  pointer-events: none;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+}
+.thumb:hover .eye-tooltip {
+  opacity: 1;
+  top: 62%;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  line-height: 1;
+  color: #b7812a;
+  background: rgba(183, 129, 42, 0.12);
+  border: 1px solid rgba(183, 129, 42, 0.25);
+  white-space: nowrap;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+#thumbs img {
+  height: 66px;
+  width: 92px;
+  object-fit: cover;
+  border-radius: 14px;
+  cursor: pointer;
+  opacity: 0.7;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+#thumbs img:hover {
+  opacity: 1;
+}
+#thumbs img.active {
+  opacity: 1;
+  border-color: #b7812a;
+}
+
+.nav-btn {
+  height: 46px;
+  width: 46px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.16);
+  transition: 0.2s;
+  backdrop-filter: blur(10px);
+}
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.26);
+  transform: translateY(-1px);
+}
+@media (max-width: 360px) {
+  .hero-shadow h1 {
+    letter-spacing: 0.02em;
+  }
+}

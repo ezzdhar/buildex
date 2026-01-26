@@ -1,0 +1,420 @@
+const projectData = [
+  {
+    "category": "3dmax",
+    "style": "classic",
+    "title": "3D Max",
+    "desc": "3D Max - Classic",
+    "cover": "images/data classification/3design/classic/card 1/mena.jpg",
+    "images": [
+      "images/data classification/3design/classic/card 1/Buildex mr mahmoud 2.jpg",
+      "images/data classification/3design/classic/card 1/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "3D Max"
+  },
+  {
+    "category": "3dmax",
+    "style": "classic",
+    "title": "3D Max",
+    "desc": "3D Max - Classic",
+    "cover": "images/data classification/3design/classic/card 2/mena.jpg",
+    "images": [
+      "images/data classification/3design/classic/card 2/3d665527-c929-4a70-aae2-28c8433ac9fe.jpg",
+      "images/data classification/3design/classic/card 2/e4ef2d0b-3119-42bc-ac1a-f28e592c1cd5.jpg",
+      "images/data classification/3design/classic/card 2/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "3D Max"
+  },
+  {
+    "category": "3dmax",
+    "style": "modern",
+    "title": "3D Max",
+    "desc": "3D Max - Modern",
+    "cover": "images/data classification/3design/modern/card 1/mena.jpg",
+    "images": [
+      "images/data classification/3design/modern/card 1/16.jpg",
+      "images/data classification/3design/modern/card 1/21.jpg",
+      "images/data classification/3design/modern/card 1/25.jpg",
+      "images/data classification/3design/modern/card 1/mena.jpg"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "3D Max"
+  },
+  {
+    "category": "furniture",
+    "style": "classic",
+    "title": "الأثاث",
+    "desc": "الأثاث - Classic",
+    "cover": "images/data classification/basic/classic/card 3/drive-download-20260118T125309Z-3-001/mena.jpg",
+    "images": [
+      "images/data classification/basic/classic/card 3/drive-download-20260118T125309Z-3-001/IMG_1197.jpg",
+      "images/data classification/basic/classic/card 3/drive-download-20260118T125309Z-3-001/IMG_9526.jpg",
+      "images/data classification/basic/classic/card 3/drive-download-20260118T125309Z-3-001/IMG_9527.jpg",
+      "images/data classification/basic/classic/card 3/drive-download-20260118T125309Z-3-001/IMG_9529.jpg",
+      "images/data classification/basic/classic/card 3/drive-download-20260118T125309Z-3-001/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "الأثاث"
+  },
+  {
+    "category": "furniture",
+    "style": "classic",
+    "title": "الأثاث",
+    "desc": "الأثاث - Classic",
+    "cover": "images/data classification/basic/classic/card 4/drive-download-20260118T125503Z-3-001/mena.jpg",
+    "images": [
+      "images/data classification/basic/classic/card 4/drive-download-20260118T125503Z-3-001/IMG_1177.jpg",
+      "images/data classification/basic/classic/card 4/drive-download-20260118T125503Z-3-001/IMG_1178.jpg",
+      "images/data classification/basic/classic/card 4/drive-download-20260118T125503Z-3-001/IMG_1186.jpg",
+      "images/data classification/basic/classic/card 4/drive-download-20260118T125503Z-3-001/IMG_1187.jpg",
+      "images/data classification/basic/classic/card 4/drive-download-20260118T125503Z-3-001/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "الأثاث"
+  },
+  {
+    "category": "furniture",
+    "style": "classic",
+    "title": "الأثاث",
+    "desc": "الأثاث - Classic",
+    "cover": "images/data classification/basic/classic/card 5/drive-download-20260118T125906Z-3-001/mena.jpg",
+    "images": [
+      "images/data classification/basic/classic/card 5/drive-download-20260118T125906Z-3-001/IMG_3068.jpg",
+      "images/data classification/basic/classic/card 5/drive-download-20260118T125906Z-3-001/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "الأثاث"
+  },
+  {
+    "category": "furniture",
+    "style": "classic",
+    "title": "الأثاث",
+    "desc": "الأثاث - Classic",
+    "cover": "images/data classification/basic/classic/card 6/mena.jpg",
+    "images": [
+      "images/data classification/basic/classic/card 6/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "الأثاث"
+  },
+  {
+    "category": "furniture",
+    "style": "classic",
+    "title": "الأثاث",
+    "desc": "الأثاث - Classic",
+    "cover": "images/data classification/basic/classic/card 7/mena.jpg",
+    "images": [
+      "images/data classification/basic/classic/card 7/IMG_1543.jpg",
+      "images/data classification/basic/classic/card 7/IMG_1544.jpg",
+      "images/data classification/basic/classic/card 7/IMG_1545.jpg",
+      "images/data classification/basic/classic/card 7/IMG_1547.jpg",
+      "images/data classification/basic/classic/card 7/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "الأثاث"
+  },
+  {
+    "category": "furniture",
+    "style": "classic",
+    "title": "الأثاث",
+    "desc": "الأثاث - Classic",
+    "cover": "images/data classification/basic/classic/card1/drive-download-20260118T124502Z-3-001/mena.jpg",
+    "images": [
+      "images/data classification/basic/classic/card1/drive-download-20260118T124502Z-3-001/IMG_1173.jpg",
+      "images/data classification/basic/classic/card1/drive-download-20260118T124502Z-3-001/IMG_1174.jpg",
+      "images/data classification/basic/classic/card1/drive-download-20260118T124502Z-3-001/IMG_1175.jpg",
+      "images/data classification/basic/classic/card1/drive-download-20260118T124502Z-3-001/IMG_1179.jpg",
+      "images/data classification/basic/classic/card1/drive-download-20260118T124502Z-3-001/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "الأثاث"
+  },
+  {
+    "category": "furniture",
+    "style": "classic",
+    "title": "الأثاث",
+    "desc": "الأثاث - Classic",
+    "cover": "images/data classification/basic/classic/card2/mena.jpg",
+    "images": [
+      "images/data classification/basic/classic/card2/IMG_2515.jpg",
+      "images/data classification/basic/classic/card2/IMG_2516.jpg",
+      "images/data classification/basic/classic/card2/IMG_2517.jpg",
+      "images/data classification/basic/classic/card2/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "الأثاث"
+  },
+  {
+    "category": "furniture",
+    "style": "modern",
+    "title": "الأثاث",
+    "desc": "الأثاث - Modern",
+    "cover": "images/data classification/basic/modern/card 3/drive-download-20260119T094625Z-3-001/mena.jpg",
+    "images": [
+      "images/data classification/basic/modern/card 3/drive-download-20260119T094625Z-3-001/18.jpg",
+      "images/data classification/basic/modern/card 3/drive-download-20260119T094625Z-3-001/19.jpg",
+      "images/data classification/basic/modern/card 3/drive-download-20260119T094625Z-3-001/20.jpg",
+      "images/data classification/basic/modern/card 3/drive-download-20260119T094625Z-3-001/2eae6c84-28ac-4a25-992a-6d469f948f03.jpg",
+      "images/data classification/basic/modern/card 3/drive-download-20260119T094625Z-3-001/mena.jpg"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "الأثاث"
+  },
+  {
+    "category": "furniture",
+    "style": "modern",
+    "title": "الأثاث",
+    "desc": "الأثاث - Modern",
+    "cover": "images/data classification/basic/modern/card1/drive-download-20260119T094637Z-3-001/mena.jpg",
+    "images": [
+      "images/data classification/basic/modern/card1/drive-download-20260119T094637Z-3-001/6b278dd8-6fbe-406f-aa6e-83c2cad87930.jpg",
+      "images/data classification/basic/modern/card1/drive-download-20260119T094637Z-3-001/72303170-f59c-4a07-9d8e-83c1715a0eb7.jpg",
+      "images/data classification/basic/modern/card1/drive-download-20260119T094637Z-3-001/9e9c0309-b021-4397-97bb-cf350e84ad53.jpg",
+      "images/data classification/basic/modern/card1/drive-download-20260119T094637Z-3-001/e3bfd44d-32ca-480a-99ef-c4f2087d4296.jpg",
+      "images/data classification/basic/modern/card1/drive-download-20260119T094637Z-3-001/mena.jpg"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "الأثاث"
+  },
+  {
+    "category": "furniture",
+    "style": "modern",
+    "title": "الأثاث",
+    "desc": "الأثاث - Modern",
+    "cover": "images/data classification/basic/modern/card2/drive-download-20260119T094607Z-3-001/mena.jpg",
+    "images": [
+      "images/data classification/basic/modern/card2/drive-download-20260119T094607Z-3-001/23.jpg",
+      "images/data classification/basic/modern/card2/drive-download-20260119T094607Z-3-001/eb8c4955-f375-40ce-9118-fd08db17bc2d.jpg",
+      "images/data classification/basic/modern/card2/drive-download-20260119T094607Z-3-001/ee240973-3a63-4f53-827b-82deb0337013.jpg",
+      "images/data classification/basic/modern/card2/drive-download-20260119T094607Z-3-001/mena.jpg",
+      "images/data classification/basic/modern/card2/drive-download-20260119T094607Z-3-001/mena.PNG"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "الأثاث"
+  },
+  {
+    "category": "kitchen",
+    "style": "classic",
+    "title": "المطبخ",
+    "desc": "المطبخ - Classic",
+    "cover": "images/data classification/cketchen/classic/card 1/drive-download-20260118T135026Z-3-001/mena.jpg",
+    "images": [
+      "images/data classification/cketchen/classic/card 1/drive-download-20260118T135026Z-3-001/IMG_0541.jpg",
+      "images/data classification/cketchen/classic/card 1/drive-download-20260118T135026Z-3-001/IMG_0542.jpg",
+      "images/data classification/cketchen/classic/card 1/drive-download-20260118T135026Z-3-001/IMG_0543.jpg",
+      "images/data classification/cketchen/classic/card 1/drive-download-20260118T135026Z-3-001/IMG_0545.jpg",
+      "images/data classification/cketchen/classic/card 1/drive-download-20260118T135026Z-3-001/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "المطبخ"
+  },
+  {
+    "category": "kitchen",
+    "style": "classic",
+    "title": "المطبخ",
+    "desc": "المطبخ - Classic",
+    "cover": "images/data classification/cketchen/classic/card 2/mena.jpg",
+    "images": [
+      "images/data classification/cketchen/classic/card 2/captain-gamal-kitchen--1.jpg",
+      "images/data classification/cketchen/classic/card 2/captain-gamal-kitchen--3.jpg",
+      "images/data classification/cketchen/classic/card 2/captain-gamal-kitchen--4.jpg",
+      "images/data classification/cketchen/classic/card 2/captain-gamal-kitchen--5.jpg",
+      "images/data classification/cketchen/classic/card 2/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "المطبخ"
+  },
+  {
+    "category": "kitchen",
+    "style": "modern",
+    "title": "المطبخ",
+    "desc": "المطبخ - Modern",
+    "cover": "images/data classification/cketchen/modern/card 1/mena.jpg",
+    "images": [
+      "images/data classification/cketchen/modern/card 1/KITCHEN-DESIGN-تعديل-رشاقة-زجاج-3.jpg",
+      "images/data classification/cketchen/modern/card 1/KITCHEN-DESIGN-تعديل-رشاقة-زجاج-4.jpg",
+      "images/data classification/cketchen/modern/card 1/KITCHEN-DESIGN-تعديل-رشاقة-زجاج-5.jpg",
+      "images/data classification/cketchen/modern/card 1/KITCHEN-DESIGN-تعديل-رشاقة-زجاج-6.jpg",
+      "images/data classification/cketchen/modern/card 1/mena.jpg"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "المطبخ"
+  },
+  {
+    "category": "kitchen",
+    "style": "modern",
+    "title": "المطبخ",
+    "desc": "المطبخ - Modern",
+    "cover": "images/data classification/cketchen/modern/card 2/mena.jpg",
+    "images": [
+      "images/data classification/cketchen/modern/card 2/kitchen-2.jpg",
+      "images/data classification/cketchen/modern/card 2/kitchen-3.jpg",
+      "images/data classification/cketchen/modern/card 2/mena.jpg"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "المطبخ"
+  },
+  {
+    "category": "kitchen",
+    "style": "modern",
+    "title": "المطبخ",
+    "desc": "المطبخ - Modern",
+    "cover": "images/data classification/cketchen/modern/card 3/mena.jpg",
+    "images": [
+      "images/data classification/cketchen/modern/card 3/mena.jpg"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "المطبخ"
+  },
+  {
+    "category": "exterior",
+    "style": "classic",
+    "title": "تشطيب خارجي",
+    "desc": "تشطيب خارجي - Classic",
+    "cover": "images/data classification/external design/classic/card 1/mena.jpg",
+    "images": [
+      "images/data classification/external design/classic/card 1/Buildex mr mahmoud 2.jpg",
+      "images/data classification/external design/classic/card 1/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "تشطيب خارجي"
+  },
+  {
+    "category": "exterior",
+    "style": "modern",
+    "title": "تشطيب خارجي",
+    "desc": "تشطيب خارجي - Modern",
+    "cover": "images/data classification/external design/modern/card1/mena.jpg",
+    "images": [
+      "images/data classification/external design/modern/card1/FAYED-MARKET-INTERRIOR-9.jpg",
+      "images/data classification/external design/modern/card1/FAYED-MAsRKET-INTERRIOR-3.jpg",
+      "images/data classification/external design/modern/card1/IMG_7821.jpg",
+      "images/data classification/external design/modern/card1/IMG_7822.jpg",
+      "images/data classification/external design/modern/card1/mena.jpg"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "تشطيب خارجي"
+  },
+  {
+    "category": "exterior",
+    "style": "newclassic",
+    "title": "تشطيب خارجي",
+    "desc": "تشطيب خارجي - New Classic",
+    "cover": "images/data classification/external design/new classic/card 1/mena.jpg",
+    "images": [
+      "images/data classification/external design/new classic/card 1/IMG_4878.jpg",
+      "images/data classification/external design/new classic/card 1/IMG_6235.jpg",
+      "images/data classification/external design/new classic/card 1/mena.jpg"
+    ],
+    "styleLabel": "New Classic",
+    "catLabel": "تشطيب خارجي"
+  },
+  {
+    "category": "interior",
+    "style": "classic",
+    "title": "التصميم الداخلي",
+    "desc": "التصميم الداخلي - Classic",
+    "cover": "images/data classification/internal design/classic/card 2/mena.jpg",
+    "images": [
+      "images/data classification/internal design/classic/card 2/IMG_1197.jpg",
+      "images/data classification/internal design/classic/card 2/IMG_9529.jpg",
+      "images/data classification/internal design/classic/card 2/IMG_9768.jpg",
+      "images/data classification/internal design/classic/card 2/IMG_9769.jpg",
+      "images/data classification/internal design/classic/card 2/mena.jpg"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "التصميم الداخلي"
+  },
+  {
+    "category": "interior",
+    "style": "classic",
+    "title": "التصميم الداخلي",
+    "desc": "التصميم الداخلي - Classic",
+    "cover": "images/data classification/internal design/classic/card1/mena.JPG",
+    "images": [
+      "images/data classification/internal design/classic/card1/IMG_7861.JPG",
+      "images/data classification/internal design/classic/card1/IMG_7863.JPG",
+      "images/data classification/internal design/classic/card1/IMG_7864.JPG",
+      "images/data classification/internal design/classic/card1/mena.JPG"
+    ],
+    "styleLabel": "Classic",
+    "catLabel": "التصميم الداخلي"
+  },
+  {
+    "category": "interior",
+    "style": "modern",
+    "title": "التصميم الداخلي",
+    "desc": "التصميم الداخلي - Modern",
+    "cover": "images/data classification/internal design/modern/card1/mena.jpg",
+    "images": [
+      "images/data classification/internal design/modern/card1/IMG_3226.jpg",
+      "images/data classification/internal design/modern/card1/IMG_3685.jpg",
+      "images/data classification/internal design/modern/card1/IMG_3827.jpg",
+      "images/data classification/internal design/modern/card1/IMG_3831.jpg",
+      "images/data classification/internal design/modern/card1/mena.jpg"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "التصميم الداخلي"
+  },
+  {
+    "category": "interior",
+    "style": "modern",
+    "title": "التصميم الداخلي",
+    "desc": "التصميم الداخلي - Modern",
+    "cover": "images/data classification/internal design/modern/card2/mena.jpg",
+    "images": [
+      "images/data classification/internal design/modern/card2/12.jpg",
+      "images/data classification/internal design/modern/card2/19.jpg",
+      "images/data classification/internal design/modern/card2/20.jpg",
+      "images/data classification/internal design/modern/card2/mena.jpg"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "التصميم الداخلي"
+  },
+  {
+    "category": "interior",
+    "style": "modern",
+    "title": "التصميم الداخلي",
+    "desc": "التصميم الداخلي - Modern",
+    "cover": "images/data classification/internal design/modern/card3/mena.jpg",
+    "images": [
+      "images/data classification/internal design/modern/card3/4.jpg",
+      "images/data classification/internal design/modern/card3/5.jpg",
+      "images/data classification/internal design/modern/card3/6.jpg",
+      "images/data classification/internal design/modern/card3/8.jpg",
+      "images/data classification/internal design/modern/card3/mena.jpg"
+    ],
+    "styleLabel": "Modern",
+    "catLabel": "التصميم الداخلي"
+  },
+  {
+    "category": "interior",
+    "style": "newclassic",
+    "title": "التصميم الداخلي",
+    "desc": "التصميم الداخلي - New Classic",
+    "cover": "images/data classification/internal design/new classic/card 1/mena.jpg",
+    "images": [
+      "images/data classification/internal design/new classic/card 1/IMG_0559.jpg",
+      "images/data classification/internal design/new classic/card 1/IMG_0672.jpg",
+      "images/data classification/internal design/new classic/card 1/IMG_1762.jpg",
+      "images/data classification/internal design/new classic/card 1/IMG_1804.jpg",
+      "images/data classification/internal design/new classic/card 1/mena.jpg"
+    ],
+    "styleLabel": "New Classic",
+    "catLabel": "التصميم الداخلي"
+  },
+  {
+    "category": "interior",
+    "style": "newclassic",
+    "title": "التصميم الداخلي",
+    "desc": "التصميم الداخلي - New Classic",
+    "cover": "images/data classification/internal design/new classic/card 2/mena.jpg",
+    "images": [
+      "images/data classification/internal design/new classic/card 2/IMG_3982.jpg",
+      "images/data classification/internal design/new classic/card 2/mena.jpg"
+    ],
+    "styleLabel": "New Classic",
+    "catLabel": "التصميم الداخلي"
+  }
+];

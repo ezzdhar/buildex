@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BUILDEX</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Tajawal:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="text-white">
+    <section class="bg-white" dir="rtl">
+      <nav>
+        <!-- HERO CARD -->
+        <div
+          class="relative overflow-hidden min-h-[360px] sm:min-h-[420px] md:min-h-[460px]"
+        >
+          <!-- ✅ Background image placeholder -->
+          <div
+            class="absolute inset-0 bg-cover bg-center"
+            style="
+              background-image: url(&quot;./images/Segmented\ picker.png&quot;);
+            "
+          ></div>
+
+          <!-- ✅ NAVBAR INSIDE HERO -->
+          <header id="siteHeader" class="fixed inset-x-0 top-0 z-50">
+            <div class="px-2 md:px-24 sm:px-6">
+              <div
+                id="navShell"
+                class="mt-4 radius-tr-2 border border-white/10 bg-white/10 backdrop-blur-md transition-all duration-300"
+              >
+                <div
+                  class="flex items-center justify-between px-4 sm:px-6 py-3"
+                >
+                  <!-- LOGO -->
+                  <div class="flex items-center gap-3 pb-3">
+                    <div class="text-right leading-tight">
+                      <a href="index.html">
+                        <img src="./images/Mask group.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- DESKTOP MENU -->
+                  <nav
+                    class="hidden md:flex items-center gap-2 text-sm font-medium text-white/90"
+                  >
+                    <a class="nav-link" href="index.html">الرئيسية</a>
+                    <a class="nav-link is-active" href="aboutus.html">من نحن</a>
+                    <a class="nav-link" href="whatwedoo.html">الخدمات</a>
+                    <a class="nav-link" href="projects.html">مشاريعنا</a>
+                    <a class="nav-link" href="contactus.html">تواصل معنا</a>
+                  </nav>
+
+                  <!-- RIGHT SIDE -->
+                  <div class="flex items-center gap-3">
+                    <!-- CTA -->
+                    <a
+                      href="https://api.whatsapp.com/send?phone=01004003431"
+                      class="hidden sm:inline-flex items-center justify-center bg-[#c78f2a] px-6 py-3 radius-tr-2 text-sm font-bold text-white hover:bg-[#d39a2f] transition shadow-md hover:shadow-[#c78f2a]/40"
+                    >
+                      احجز استشارتك
+                    </a>
+
+                    <!-- MOBILE MENU BUTTON -->
+                    <button
+                      id="menuBtn"
+                      class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/10 px-3 py-2 text-white/90 hover:bg-white/15 transition"
+                      aria-label="Open Menu"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4 6h16M4 12h16M4 18h16"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- MOBILE MENU -->
+                <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+                  <div
+                    class="mt-2 rounded-2xl border border-white/10 bg-black/20 p-3"
+                  >
+                    <nav
+                      class="flex flex-col gap-1 text-sm font-medium text-white/90"
+                    >
+                      <a class="nav-link" href="index.html">الرئيسية</a>
+                      <a class="nav-link is-active" href="aboutus.html"
+                        >من نحن</a
+                      >
+                      <a class="nav-link" href="whatwedoo.html">الخدمات</a>
+                      <a class="nav-link" href="projects.html">مشاريعنا</a>
+                      <a class="nav-link" href="contactus.html">تواصل معنا</a>
+
+                      <a
+                        href="https://api.whatsapp.com/send?phone=01004003431"
+                        class="mt-2 inline-flex items-center justify-center rounded-full bg-[#c78f2a] px-5 py-2 text-sm font-bold text-white hover:bg-[#d39a2f] transition"
+                      >
+                        احجز استشارتك
+                      </a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- CENTER TEXT -->
+          <div
+            class="relative z-10 h-full flex items-center justify-center text-center px-4 sm:px-6"
+          >
+            <div class="max-w-3xl pt-20 sm:pt-24 md:pt-28">
+              <div class="flex justify-center mb-4">
+                <span
+                  class="inline-flex h-7 w-14 items-center justify-center text-[#B7812A]"
+                >
+                </span>
+              </div>
+
+              <h1
+                class="font-['Noto_Kufi_Arabic'] pt-8 text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-[1.15]"
+              >
+                عن الشركة
+              </h1>
+
+              <p
+                class="mt-4 font-['Noto_Kufi_Arabic'] text-sm sm:text-base md:text-lg text-white/85 leading-relaxed"
+              >
+                نصنع التميز بخبرة وثقة
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <script>
+      // Active link background (pill)
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach((link) => {
+        link.classList.add(
+          "px-4",
+          "py-2",
+          "radius-tr-2",
+          "transition",
+          "duration-200",
+          "hover:bg-white/10",
+          "hover:text-white",
+        );
+
+        link.addEventListener("click", () => {
+          navLinks.forEach((l) => l.classList.remove("is-active"));
+          link.classList.add("is-active");
+          applyActiveStyles();
+        });
+      });
+
+      function applyActiveStyles() {
+        navLinks.forEach((l) => {
+          if (l.classList.contains("is-active")) {
+            l.classList.add("bg-[#B7812A]", "text-white");
+            l.classList.remove("text-white/90");
+          } else {
+            l.classList.remove("bg-[#B7812A]");
+            l.classList.add("text-white/90");
+          }
+        });
+      }
+      applyActiveStyles();
+
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+
+      // On scroll: darken nav background (داخل الهيرو برضو هتشتغل)
+      const navShell = document.getElementById("navShell");
+      function onScroll() {
+        const scrolled = window.scrollY > 20;
+        if (scrolled) {
+          navShell.classList.remove("bg-white/10");
+          navShell.classList.add("bg-black/40", "border-white/15");
+        } else {
+          navShell.classList.remove("bg-black/40", "border-white/15");
+          navShell.classList.add("bg-white/10");
+        }
+      }
+      window.addEventListener("scroll", onScroll);
+      onScroll();
+    </script>
+
+    <section class="bg-white py-14 md:py-20" dir="rtl">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <!-- Small pill -->
+        <div class="flex mb-5">
+          <span
+            class="inline-flex items-center rounded-md bg-[#f3efe7] px-4 py-2 font-['Noto_Kufi_Arabic'] text-xs text-zinc-600"
+          >
+            كيف نعمل؟
+          </span>
+        </div>
+
+        <!-- Title -->
+        <h2
+          class="font-['Noto_Kufi_Arabic'] font-bold text-[#B7812A] text-2xl sm:text-3xl md:text-4xl leading-[1.25]"
+        >
+          BUILDEX - خبرة طويلة في تطوير
+          <span class="block mt-2">المشاريع بجودة واحترافية عالية.</span>
+        </h2>
+
+        <!-- Bullets -->
+        <ul
+          class="mt-7 md:mt-9 max-w-3xl font-['Noto_Kufi_Arabic'] text-sm sm:text-base text-zinc-600 leading-relaxed space-y-3"
+        >
+          <li class="flex gap-3">
+            <span
+              class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400 shrink-0"
+            ></span>
+            <span
+              >فهم احتياجاتك: نستمع لكل أفكارك ومتطلباتك لضمان تصميم يليق
+              برؤيتك.</span
+            >
+          </li>
+          <li class="flex gap-3">
+            <span
+              class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400 shrink-0"
+            ></span>
+            <span>تصميم متوازن: نبتكر حلول عملية وجمالية تناسب كل مساحة.</span>
+          </li>
+          <li class="flex gap-3">
+            <span
+              class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400 shrink-0"
+            ></span>
+            <span
+              >اختيار الخامات: نختار أفضل المواد لضمان جودة وأناقة عالية.</span
+            >
+          </li>
+          <li class="flex gap-3">
+            <span
+              class="mt-2 h-1.5 w-1.5 rounded-full bg-zinc-400 shrink-0"
+            ></span>
+            <span
+              >تنفيذ متقن: نتابع كل خطوة بدقة لتحويل التصميم إلى واقع
+              متكامل.</span
+            >
+          </li>
+        </ul>
+
+        <!-- ✅ Image placeholder (إنتِ هتنزلي الصورة جاهزة) -->
+        <div class="mt-10 md:mt-12 flex">
+          <div class="w-full max-w-6xl">
+            <!-- حطي صورتك هنا -->
+            <img
+              src="./images/Container.png"
+              alt="How we work"
+              class="w-full h-auto"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#FFFAF1] py-16 md:py-36" dir="rtl">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <!-- Heading -->
+        <div class="text-center mb-12 md:mb-16">
+          <h2
+            class="font-['Noto_Kufi_Arabic'] text-2xl sm:text-3xl md:text-4xl font-bold text-[#B7812A]"
+          >
+            رؤيتنا ورسالتنا
+          </h2>
+
+          <p
+            class="mt-4 font-['Noto_Kufi_Arabic'] text-sm sm:text-base text-zinc-600"
+          >
+            نجمع بين التصميم العصري والجودة في التشطيب الداخلي والخارجي
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid gap-8 md:gap-10 md:grid-cols-2">
+          <!-- Vision Card -->
+          <div
+            class="radius-tr-2 bg-white p-8 sm:p-10 md:p-12 text-center border border-[#B7812A]/40"
+          >
+            <div class="flex justify-center mb-6 text-[#B7812A]">
+              <i class="fa-regular fa-eye text-3xl"></i>
+            </div>
+
+            <h3
+              class="font-['Noto_Kufi_Arabic'] text-lg sm:text-xl font-bold text-zinc-800"
+            >
+              الرؤية
+            </h3>
+
+            <p
+              class="mt-4 font-['Noto_Kufi_Arabic'] text-sm sm:text-base text-zinc-600 leading-relaxed"
+            >
+              أن نكون من الشركات الرائدة في مجال التطوير العقاري من خلال تقديم
+              مشروعات تعكس قيمة حقيقية، وتحقق توازنًا بين التصميم العصري
+              والوظيفة العملية.
+            </p>
+          </div>
+
+          <!-- Mission Card -->
+          <div
+            class="radius-tl-2 bg-white p-8 sm:p-10 md:p-12 text-center border border-[#B7812A]/40"
+          >
+            <div class="flex justify-center mb-6 text-[#B7812A]">
+              <i class="fa-solid fa-bullseye text-3xl"></i>
+            </div>
+
+            <h3
+              class="font-['Noto_Kufi_Arabic'] text-lg sm:text-xl font-bold text-zinc-800"
+            >
+              مهمتنا
+            </h3>
+
+            <p
+              class="mt-4 font-['Noto_Kufi_Arabic'] text-sm sm:text-base text-zinc-600 leading-relaxed"
+            >
+              تطوير مشروعات عقارية بأعلى معايير الجودة، مع الالتزام الكامل
+              بمواعيد التسليم وتقديم قيمة مضافة حقيقية لعملائنا سواء للسكن أو
+              الاستثمار.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#FFFFFF] py-16 md:py-24" dir="rtl">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <!-- Heading -->
+        <div class="text-center">
+          <h2
+            class="font-['Noto_Kufi_Arabic'] text-2xl sm:text-3xl md:text-4xl font-bold text-[#B7812A]"
+          >
+            قيمنا
+          </h2>
+
+          <p
+            class="mt-3 font-['Noto_Kufi_Arabic'] text-sm sm:text-base text-zinc-600"
+          >
+            نعمل وفق منظومة قيم تحدد أسلوبنا في التعامل والإنجاز.
+          </p>
+        </div>
+
+        <!-- Values Card -->
+        <div
+          class="mt-12 rounded-b-[40px] rounded-t-sm border border-[#B7812A]/60 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] overflow-hidden"
+        >
+          <div
+            class="grid gap-8 px-6 py-10 sm:px-10 md:grid-cols-4 md:gap-10 md:py-20"
+          >
+            <!-- Item -->
+            <div class="text-center">
+              <h3
+                class="font-['Noto_Kufi_Arabic'] text-base font-bold font-size-[24px] text-zinc-800"
+              >
+                الجودة المستدامة
+              </h3>
+              <p
+                class="mt-3 font-['Noto_Kufi_Arabic'] text-sm text-zinc-600 font-size-[18px] leading-relaxed"
+              >
+                نلتزم بأعلى معايير المواد والتنفيذ دون أي تنازل دائمًا.
+              </p>
+            </div>
+
+            <div class="text-center">
+              <h3
+                class="font-['Noto_Kufi_Arabic'] text-base font-bold font-size-[24px] text-zinc-800"
+              >
+                شفافية كاملة
+              </h3>
+              <p
+                class="mt-3 font-['Noto_Kufi_Arabic'] text-sm text-zinc-600 font-size-[18px] leading-relaxed"
+              >
+                وضوح كامل في التفاصيل وتواصل صريح مع جميع العملاء.
+              </p>
+            </div>
+
+            <div class="text-center">
+              <h3
+                class="font-['Noto_Kufi_Arabic'] text-base font-bold font-size-[24px] text-zinc-800"
+              >
+                التزام تام
+              </h3>
+              <p
+                class="mt-3 font-['Noto_Kufi_Arabic'] text-sm text-zinc-600 font-size-[18px] leading-relaxed"
+              >
+                مواعيد واضحة وتسليم مسؤول يضمن الثقة واستمرارية التعامل.
+              </p>
+            </div>
+
+            <div class="text-center">
+              <h3
+                class="font-['Noto_Kufi_Arabic'] text-base font-bold font-size-[24px] text-zinc-800"
+              >
+                احترافية عالية
+              </h3>
+              <p
+                class="mt-3 font-['Noto_Kufi_Arabic'] text-sm text-zinc-600 font-size-[18px] leading-relaxed"
+              >
+                إدارة دقيقة وخبرة عملية تضمن كفاءة التنفيذ وجودته العالية.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#FFFAF1] py-12 md:py-16" dir="rtl">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <div class="grid gap-6 lg:grid-cols-[1.25fr_1fr] lg:items-stretch">
+          <!-- Right stats grid -->
+          <div class="grid gap-6 sm:grid-cols-2">
+            <!-- Stat 1 -->
+            <div class="relative overflow-hidden min-h-[170px]">
+              <div
+                class="absolute inset-0 bg-cover bg-center"
+                style="
+                  background-image: url(&quot;./images/frame2.svg&quot;);
+                  border-radius: 0px 30px 0 0;
+                "
+              ></div>
+
+              <div
+                class="relative z-10 h-full p-6 text-white flex flex-col justify-center text-center"
+              >
+                <div class="mb-2 flex justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div class="text-3xl font-extrabold">36+</div>
+                <div
+                  class="mt-1 font-['Noto_Kufi_Arabic'] text-sm text-white/90"
+                >
+                  عميل اختارنا
+                </div>
+              </div>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="relative overflow-hidden min-h-[170px]">
+              <div
+                class="absolute inset-0 bg-cover bg-center"
+                style="background-image: url(&quot;./images/frame4.svg&quot;)"
+              ></div>
+
+              <div
+                class="relative z-10 h-full p-6 text-white flex flex-col justify-center text-center"
+              >
+                <div class="mb-2 flex justify-center">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.7905 15.17C10.5905 15.17 10.4005 15.09 10.2605 14.95L7.84055 12.53C7.55055 12.24 7.55055 11.76 7.84055 11.47C8.13055 11.18 8.61055 11.18 8.90055 11.47L10.7905 13.36L15.0905 9.06003C15.3805 8.77003 15.8605 8.77003 16.1505 9.06003C16.4405 9.35003 16.4405 9.83003 16.1505 10.12L11.3205 14.95C11.1805 15.09 10.9905 15.17 10.7905 15.17Z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M12.0009 22.75C11.3709 22.75 10.7409 22.54 10.2509 22.12L8.67086 20.76C8.51086 20.62 8.11086 20.48 7.90086 20.48H6.18086C4.70086 20.48 3.50086 19.28 3.50086 17.8V16.09C3.50086 15.88 3.36086 15.49 3.22086 15.33L1.87086 13.74C1.05086 12.77 1.05086 11.24 1.87086 10.27L3.22086 8.68C3.36086 8.52 3.50086 8.13 3.50086 7.92V6.2C3.50086 4.72 4.70086 3.52 6.18086 3.52H7.91086C8.12086 3.52 8.52086 3.37 8.68086 3.24L10.2609 1.88C11.2409 1.04 12.7709 1.04 13.7509 1.88L15.3309 3.24C15.4909 3.38 15.8909 3.52 16.1009 3.52H17.8009C19.2809 3.52 20.4809 4.72 20.4809 6.2V7.9C20.4809 8.11 20.6309 8.51 20.7709 8.67L22.1309 10.25C22.9709 11.23 22.9709 12.76 22.1309 13.74L20.7709 15.32C20.6309 15.48 20.4809 15.88 20.4809 16.09V17.79C20.4809 19.27 19.2809 20.47 17.8009 20.47H16.1009C15.8909 20.47 15.4909 20.62 15.3309 20.75L13.7509 22.11C13.2609 22.54 12.6309 22.75 12.0009 22.75ZM6.18086 5.02C5.53086 5.02 5.00086 5.55 5.00086 6.2V7.91C5.00086 8.48 4.73086 9.21 4.36086 9.64L3.01086 11.23C2.66086 11.64 2.66086 12.35 3.01086 12.76L4.36086 14.35C4.73086 14.79 5.00086 15.51 5.00086 16.08V17.79C5.00086 18.44 5.53086 18.97 6.18086 18.97H7.91086C8.49086 18.97 9.22086 19.24 9.66086 19.62L11.2409 20.98C11.6509 21.33 12.3709 21.33 12.7809 20.98L14.3609 19.62C14.8009 19.25 15.5309 18.97 16.1109 18.97H17.8109C18.4609 18.97 18.9909 18.44 18.9909 17.79V16.09C18.9909 15.51 19.2609 14.78 19.6409 14.34L21.0009 12.76C21.3509 12.35 21.3509 11.63 21.0009 11.22L19.6409 9.64C19.2609 9.2 18.9909 8.47 18.9909 7.89V6.2C18.9909 5.55 18.4609 5.02 17.8109 5.02H16.1109C15.5309 5.02 14.8009 4.75 14.3609 4.37L12.7809 3.01C12.3709 2.66 11.6509 2.66 11.2409 3.01L9.66086 4.38C9.22086 4.75 8.48086 5.02 7.91086 5.02H6.18086Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </div>
+                <div class="text-3xl font-extrabold">57+</div>
+                <div
+                  class="mt-1 font-['Noto_Kufi_Arabic'] text-sm text-white/90"
+                >
+                  مشروع تم تنفيذه
+                </div>
+              </div>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="relative overflow-hidden min-h-[170px]">
+              <div
+                class="absolute inset-0 bg-cover bg-center"
+                style="
+                  background-image: url(&quot;./images/frame5.svg&quot;);
+                  border-radius: 0 0 30px 0;
+                "
+              ></div>
+
+              <div
+                class="relative z-10 h-full p-6 text-white flex flex-col justify-center text-center"
+              >
+                <div class="mb-2 flex justify-center">
+                  <svg
+                    fill="#fff"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6,22H18a3,3,0,0,0,3-3V7a2,2,0,0,0-2-2H17V3a1,1,0,0,0-2,0V5H9V3A1,1,0,0,0,7,3V5H5A2,2,0,0,0,3,7V19A3,3,0,0,0,6,22ZM5,12.5a.5.5,0,0,1,.5-.5h13a.5.5,0,0,1,.5.5V19a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1Z"
+                    />
+                  </svg>
+                </div>
+                <div class="text-3xl font-extrabold">7+</div>
+                <div
+                  class="mt-1 font-['Noto_Kufi_Arabic'] text-sm text-white/90"
+                >
+                  سنوات خبرة
+                </div>
+              </div>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="relative overflow-hidden min-h-[170px]">
+              <div
+                class="absolute inset-0 bg-cover bg-center"
+                style="
+                  background-image: url(&quot;./images/frame3.svg&quot;);
+                  border-radius: 0 0 0 30px;
+                "
+              ></div>
+
+              <div
+                class="relative z-10 h-full p-6 text-white flex flex-col justify-center text-center"
+              >
+                <div class="mb-2 flex justify-center">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 7V12H15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="text-3xl font-extrabold">100%</div>
+                <div
+                  class="mt-1 font-['Noto_Kufi_Arabic'] text-sm text-white/90"
+                >
+                  التزام بالمواعيد
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Left big card -->
+          <div
+            class="relative overflow-hidden radius-tr-2 shadow-[0_14px_30px_rgba(0,0,0,0.12)] min-h-[360px] sm:min-h-[420px]"
+          >
+            <!-- BG image placeholder -->
+            <div
+              class="absolute inset-0 bg-cover bg-center"
+              style="background-image: url(&quot;./images/frame1.svg&quot;)"
+            ></div>
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <!-- Content -->
+            <div
+              class="relative z-10 p-7 sm:p-10 md:p-12 mt-12 text-white text-center"
+            >
+              <h2
+                class="font-['Noto_Kufi_Arabic'] font-[45px] sm:text-4xl md:text-4xl font-bold leading-[1.15]"
+              >
+                نجمع كل قطعة، نصنع
+                <span class="block mt-2">صورة متكاملة</span>
+              </h2>
+
+              <p
+                class="mt-4 max-w-lg font-['Noto_Kufi_Arabic'] text-sm sm:text-base text-white/90 leading-relaxed"
+              >
+                كل قطعة في مكانها، لتصبح حلمك. احجز الآن!
+              </p>
+
+              <a
+                href="#book"
+                class="mt-8 inline-flex items-center justify-center gap-2 radius-tr-2 border border-white/50 bg-white/10 px-6 py-3 text-sm sm:text-base font-bold hover:bg-white/20 transition"
+              >
+                احجز استشارتك الآن
+                <span class="inline-flex">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="relative overflow-hidden text-white" dir="rtl">
+      <!-- Background -->
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="
+          background-image: url(&quot;./images/Frame\ 2147224260.png&quot;);
+          border-radius: 50px 50px 0 0;
+        "
+      ></div>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0"></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 py-12 md:py-16">
+        <div class="grid gap-10 lg:grid-cols-3 items-start">
+          <!-- ✅ RIGHT: Brand -->
+          <div class="text-right">
+            <div class="flex items-center justify-start gap-3 mb-4">
+              <img src="./images/Group 10.png" alt="Buildex" />
+            </div>
+
+            <p
+              class="text-sm text-white/80 leading-relaxed font-['Noto_Kufi_Arabic']"
+            >
+              نقدم خدمات التصميم والتشطيب متكاملة، مع الاهتمام بأعلى معايير
+              الدقة والجودة، والتنفيذ الاحترافي من الفكرة حتى التسليم.
+            </p>
+
+            <!-- Social -->
+            <div class="mt-6 flex justify-start gap-3">
+              <a
+                href="https://www.facebook.com/BuildexArchitecture"
+                class="footer-icon"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/buildexarchitecture/"
+                class="footer-icon"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=01004003431"
+                class="footer-icon"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@buildexarchitecture"
+                class="footer-icon"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- ✅ CENTER: Links -->
+          <div class="text-right mx-0 sm:mx-0 md:mx-auto lg:mx-auto">
+            <h3 class="font-['Noto_Kufi_Arabic'] text-[#B7812A] font-bold mb-5">
+              روابط سريعة
+            </h3>
+
+            <ul class="space-y-3 text-sm justify-start text-white/85">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="aboutus.html">من نحن</a></li>
+              <li><a href="whatwedoo.html">الخدمات</a></li>
+              <li><a href="projects.html">المشاريع</a></li>
+              <li><a href="contactus.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <!-- ✅ LEFT: Contact -->
+          <div class="text-right">
+            <h3 class="font-['Noto_Kufi_Arabic'] text-[#B7812A] font-bold mb-5">
+              معلومات التواصل
+            </h3>
+
+            <div class="space-y-4 text-sm text-white/85">
+              <div class="flex items-center gap-3">
+                <span class="footer-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <a href="tel:+201004003431">01004003431</a>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="footer-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <a href="mailto:buildexarchitecture@gmail.com"
+                  >buildexarchitecture@gmail.com</a
+                >
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="footer-icon mt-1">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <p>
+                  دمياط الجديدة، الحي الثالث<br />
+                  مجاورة 17، منتصف شارع اللبان
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="mt-10 pt-6 border-t border-white/10 text-center text-xs text-white/70 font-['Noto_Kufi_Arabic']"
+        >
+          حقوق النشر © 2025 Buildex – جميع الحقوق محفوظة
+        </div>
+      </div>
+
+      <!-- 🎨 ICON STYLE -->
+      <style>
+        .footer-icon {
+          width: 40px;
+          height: 40px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0 5px 5px 5px;
+          background: linear-gradient(135deg, #c89b3c, #9a6b1e);
+          color: #fff;
+          font-size: 16px;
+          transition: 0.3s ease;
+        }
+        .footer-icon:hover {
+          transform: translateY(-2px);
+          opacity: 0.9;
+        }
+      </style>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

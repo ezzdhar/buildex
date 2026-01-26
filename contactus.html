@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BUILDEX</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Tajawal:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="text-white">
+    <section class="bg-white" dir="rtl">
+      <div>
+        <!-- HERO CARD -->
+        <div
+          class="relative overflow-hidden min-h-[360px] sm:min-h-[420px] md:min-h-[460px]"
+        >
+          <!-- ✅ Background image placeholder -->
+          <div
+            class="absolute inset-0 bg-cover bg-center"
+            style="
+              background-image: url(&quot;./images/Segmented\ picker.png&quot;);
+            "
+          ></div>
+
+          <!-- ✅ NAVBAR INSIDE HERO -->
+          <header id="siteHeader" class="fixed inset-x-0 top-0 z-50">
+            <div class="px-2 md:px-24 sm:px-6">
+              <div
+                id="navShell"
+                class="mt-4 radius-tr-2 border border-white/10 bg-white/10 backdrop-blur-md transition-all duration-300"
+              >
+                <div
+                  class="flex items-center justify-between px-4 sm:px-6 py-3"
+                >
+                  <!-- LOGO -->
+                  <div class="flex items-center gap-3 pb-3">
+                    <div class="text-right leading-tight">
+                      <a href="index.html">
+                        <img src="./images/Mask group.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- DESKTOP MENU -->
+                  <nav
+                    class="hidden md:flex items-center gap-2 text-sm font-medium text-white/90"
+                  >
+                    <a class="nav-link" href="index.html">الرئيسية</a>
+                    <a class="nav-link" href="aboutus.html">من نحن</a>
+                    <a class="nav-link" href="whatwedoo.html">الخدمات</a>
+                    <a class="nav-link" href="projects.html">مشاريعنا</a>
+                    <a class="nav-link is-active" href="contactus.html"
+                      >تواصل معنا</a
+                    >
+                  </nav>
+
+                  <!-- RIGHT SIDE -->
+                  <div class="flex items-center gap-3">
+                    <!-- CTA -->
+                    <a
+                      href="https://api.whatsapp.com/send?phone=01004003431"
+                      class="hidden sm:inline-flex items-center justify-center bg-[#c78f2a] px-6 py-3 radius-tr-2 text-sm font-bold text-white hover:bg-[#d39a2f] transition shadow-md hover:shadow-[#c78f2a]/40"
+                    >
+                      احجز استشارتك
+                    </a>
+
+                    <!-- MOBILE MENU BUTTON -->
+                    <button
+                      id="menuBtn"
+                      class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/10 px-3 py-2 text-white/90 hover:bg-white/15 transition"
+                      aria-label="Open Menu"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M4 6h16M4 12h16M4 18h16"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- MOBILE MENU -->
+                <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+                  <div
+                    class="mt-2 rounded-2xl border border-white/10 bg-black/20 p-3"
+                  >
+                    <nav
+                      class="flex flex-col gap-1 text-sm font-medium text-white/90"
+                    >
+                      <a class="nav-link" href="index.html">الرئيسية</a>
+                      <a class="nav-link" href="aboutus.html">من نحن</a>
+                      <a class="nav-link" href="whatwedoo.html">الخدمات</a>
+                      <a class="nav-link" href="projects.html">مشاريعنا</a>
+                      <a class="nav-link is-active" href="contactus.html"
+                        >تواصل معنا</a
+                      >
+
+                      <a
+                        href="https://api.whatsapp.com/send?phone=01004003431"
+                        class="mt-2 inline-flex items-center justify-center rounded-full bg-[#c78f2a] px-5 py-2 text-sm font-bold text-white hover:bg-[#d39a2f] transition"
+                      >
+                        احجز استشارتك
+                      </a>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- CENTER TEXT -->
+          <div
+            class="relative z-10 h-full flex items-center justify-center text-center px-4 sm:px-6"
+          >
+            <div class="max-w-3xl pt-20 sm:pt-24 md:pt-28">
+              <div class="flex justify-center mb-4">
+                <span
+                  class="inline-flex h-7 w-14 items-center justify-center text-[#B7812A]"
+                >
+                </span>
+              </div>
+
+              <h1
+                class="font-['Noto_Kufi_Arabic'] pt-8 text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-[1.15]"
+              >
+                تواصل معنا
+              </h1>
+
+              <p
+                class="mt-4 font-['Noto_Kufi_Arabic'] text-sm sm:text-base md:text-lg text-white/85 leading-relaxed"
+              >
+                نسعد بالاستماع إليكم والإجابة على جميع استفساراتكم
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Active link background (pill)
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach((link) => {
+        link.classList.add(
+          "px-4",
+          "py-2",
+          "radius-tr-2",
+          "transition",
+          "duration-200",
+          "hover:bg-white/10",
+          "hover:text-white",
+        );
+
+        link.addEventListener("click", () => {
+          navLinks.forEach((l) => l.classList.remove("is-active"));
+          link.classList.add("is-active");
+          applyActiveStyles();
+        });
+      });
+
+      function applyActiveStyles() {
+        navLinks.forEach((l) => {
+          if (l.classList.contains("is-active")) {
+            l.classList.add("bg-[#B7812A]", "text-white");
+            l.classList.remove("text-white/90");
+          } else {
+            l.classList.remove("bg-[#B7812A]");
+            l.classList.add("text-white/90");
+          }
+        });
+      }
+      applyActiveStyles();
+
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+      }
+
+      // On scroll: darken nav background (داخل الهيرو برضو هتشتغل)
+      const navShell = document.getElementById("navShell");
+      function onScroll() {
+        const scrolled = window.scrollY > 20;
+        if (scrolled) {
+          navShell.classList.remove("bg-white/10");
+          navShell.classList.add("bg-black/40", "border-white/15");
+        } else {
+          navShell.classList.remove("bg-black/40", "border-white/15");
+          navShell.classList.add("bg-white/10");
+        }
+      }
+      window.addEventListener("scroll", onScroll);
+      onScroll();
+    </script>
+
+    <section class="bg-[#ffffff] py-16 md:py-20" dir="rtl">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6">
+        <!-- Heading -->
+        <div class="text-center">
+          <h2
+            class="font-['Noto_Kufi_Arabic'] text-2xl sm:text-3xl md:text-4xl font-bold text-[#B7812A]"
+          >
+            لماذا تتواصل معنا؟
+          </h2>
+          <p
+            class="mt-3 font-['Noto_Kufi_Arabic'] text-sm sm:text-base text-zinc-600"
+          >
+            استشارة مجانية لمشروعاتك
+          </p>
+        </div>
+
+        <div class="grid gap-12 mt-12 md:grid-cols-2">
+          <!-- Right Side (Form) -->
+          <div class="bg-white p-8 rounded-2xl shadow-lg">
+            <form action="send_message.php" method="POST">
+              <div class="grid gap-6">
+                <div>
+                  <label class="block text-sm text-zinc-600">الاسم الأول</label>
+                  <input
+                    name="first_name"
+                    required
+                    class="mt-2 w-full rounded-lg border border-zinc-300 p-3 text-sm"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm text-zinc-600"
+                    >الاسم الأخير</label
+                  >
+                  <input
+                    name="last_name"
+                    required
+                    class="mt-2 w-full rounded-lg border border-zinc-300 p-3 text-sm"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm text-zinc-600"
+                    >البريد الإلكتروني</label
+                  >
+                  <input
+                    name="email"
+                    type="email"
+                    required
+                    class="mt-2 w-full rounded-lg border border-zinc-300 p-3 text-sm"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm text-zinc-600">رقم الهاتف</label>
+                  <input
+                    name="phone"
+                    required
+                    class="mt-2 w-full rounded-lg border border-zinc-300 p-3 text-sm"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm text-zinc-600">الرسالة</label>
+                  <textarea
+                    name="message"
+                    rows="4"
+                    required
+                    class="mt-2 w-full rounded-lg border border-zinc-300 p-3 text-sm"
+                  ></textarea>
+                </div>
+
+                <button
+                  class="mt-4 w-full rounded-full bg-[#B7812A] py-3 font-bold text-white hover:bg-[#d39a2f] transition"
+                >
+                  ابدأ مشروعك الآن
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Left Side -->
+          <div class="flex flex-col gap-6">
+            <!-- WHY CONTACT US BOX -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 sm:p-8">
+              <h3
+                class="font-['Noto_Kufi_Arabic'] text-xl sm:text-xl font-bold text-[#B7812A] mb-4"
+              >
+                لماذا تتواصل معنا؟
+              </h3>
+
+              <ul
+                class="space-y-3 text-sm sm:text-base text-zinc-600 font-['Noto_Kufi_Arabic']"
+              >
+                <li>• نحول أفكارك لواقع بأعلي جودة تشطيب تليق بذوقك</li>
+                <li>
+                  • نضع خبرتنا بين يديك لنحول المساحات إلي قيمة حقيقة تدوم
+                </li>
+                <li>
+                  • رسوم المعاينة وتكاليف التصميم ( 2D ) مجانية في حالة التعاقد
+                  علي التنفيذ
+                </li>
+                <li>
+                  • التزام في المواعيد . دقة في التنفيذ . راحة بال من أول يوم
+                </li>
+              </ul>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="overflow-hidden radius-tr-2">
+              <img
+                src="./images/Container (1).png"
+                alt="Buildex consultation"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="relative overflow-hidden text-white" dir="rtl">
+      <!-- Background -->
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="
+          background-image: url(&quot;./images/Frame\ 2147224260.png&quot;);
+          border-radius: 50px 50px 0 0;
+        "
+      ></div>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0"></div>
+
+      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 py-12 md:py-16">
+        <div class="grid gap-10 lg:grid-cols-3 items-start">
+          <!-- ✅ RIGHT: Brand -->
+          <div class="text-right">
+            <div class="flex items-center justify-start gap-3 mb-4">
+              <img src="./images/Group 10.png" alt="Buildex" />
+            </div>
+
+            <p
+              class="text-sm text-white/80 leading-relaxed font-['Noto_Kufi_Arabic']"
+            >
+              نقدم خدمات التصميم والتشطيب متكاملة، مع الاهتمام بأعلى معايير
+              الدقة والجودة، والتنفيذ الاحترافي من الفكرة حتى التسليم.
+            </p>
+
+            <!-- Social -->
+            <div class="mt-6 flex justify-start gap-3">
+              <a
+                href="https://www.facebook.com/BuildexArchitecture"
+                class="footer-icon"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/buildexarchitecture/"
+                class="footer-icon"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=01004003431"
+                class="footer-icon"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@buildexarchitecture"
+                class="footer-icon"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- ✅ CENTER: Links -->
+          <div class="text-right mx-0 sm:mx-0 md:mx-auto lg:mx-auto">
+            <h3 class="font-['Noto_Kufi_Arabic'] text-[#B7812A] font-bold mb-5">
+              روابط سريعة
+            </h3>
+
+            <ul class="space-y-3 text-sm justify-start text-white/85">
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="aboutus.html">من نحن</a></li>
+              <li><a href="whatwedoo.html">الخدمات</a></li>
+              <li><a href="projects.html">المشاريع</a></li>
+              <li><a href="contactus.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <!-- ✅ LEFT: Contact -->
+          <div class="text-right">
+            <h3 class="font-['Noto_Kufi_Arabic'] text-[#B7812A] font-bold mb-5">
+              معلومات التواصل
+            </h3>
+
+            <div class="space-y-4 text-sm text-white/85">
+              <div class="flex items-center gap-3">
+                <span class="footer-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <a href="tel:+201004003431">01004003431</a>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="footer-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <a href="mailto:buildexarchitecture@gmail.com"
+                  >buildexarchitecture@gmail.com</a
+                >
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="footer-icon mt-1">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <p>
+                  دمياط الجديدة، الحي الثالث<br />
+                  مجاورة 17، منتصف شارع اللبان
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="mt-10 pt-6 border-t border-white/10 text-center text-xs text-white/70 font-['Noto_Kufi_Arabic']"
+        >
+          حقوق النشر © 2025 Buildex – جميع الحقوق محفوظة
+        </div>
+      </div>
+
+      <!-- 🎨 ICON STYLE -->
+      <style>
+        .footer-icon {
+          width: 40px;
+          height: 40px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 0 5px 5px 5px;
+          background: linear-gradient(135deg, #c89b3c, #9a6b1e);
+          color: #fff;
+          font-size: 16px;
+          transition: 0.3s ease;
+        }
+        .footer-icon:hover {
+          transform: translateY(-2px);
+          opacity: 0.9;
+        }
+      </style>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
