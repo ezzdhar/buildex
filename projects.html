@@ -337,7 +337,7 @@
 
                 <button
                   id="closeModal"
-                  class="h-10 w-10 rounded-2xl bg-zinc-100 hover:bg-zinc-200 transition flex items-center justify-center"
+                  class="h-10 w-10 rounded-2xl bg-zinc-900 text-white hover:bg-zinc-800 sm:bg-zinc-100 sm:text-zinc-900 sm:hover:bg-zinc-200 transition flex items-center justify-center shadow-lg sm:shadow-none border border-white/20 sm:border-transparent"
                   aria-label="Close"
                 >
                   <i class="fa-solid fa-xmark"></i>
@@ -346,12 +346,24 @@
             </div>
 
             <!-- Body -->
-            <div class="relative bg-black">
+            <div
+              class="relative bg-black min-h-[300px] flex items-center justify-center"
+            >
+              <!-- Loading Spinner -->
+              <div
+                id="modalLoading"
+                class="absolute inset-0 flex items-center justify-center z-20 bg-black/20 backdrop-blur-sm"
+              >
+                <div
+                  class="w-10 h-10 border-4 border-t-[#B7812A] border-white/20 rounded-full animate-spin"
+                ></div>
+              </div>
+
               <img
                 id="modalImg"
                 src=""
                 alt="Preview"
-                class="w-full max-h-[72vh] object-contain"
+                class="w-full max-h-[72vh] object-contain opacity-0 transition-opacity duration-300"
               />
 
               <!-- Prev/Next -->
@@ -559,8 +571,19 @@
             });
           }
 
+          const modalLoading = document.getElementById("modalLoading");
+
           function update() {
+            modalLoading.classList.remove("hidden");
+            modalImg.classList.add("opacity-0");
+
             modalImg.src = images[idx];
+
+            modalImg.onload = () => {
+              modalLoading.classList.add("hidden");
+              modalImg.classList.remove("opacity-0");
+            };
+
             counterText.textContent = `${idx + 1} / ${images.length}`;
             Array.from(thumbsWrap.querySelectorAll("img")).forEach((img, i) => {
               img.classList.toggle("active", i === idx);
