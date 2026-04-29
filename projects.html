@@ -1,425 +1,324 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BUILDEX</title>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-27J3ZJV7S4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BUILDEX</title>
 
-      gtag('config', 'G-27J3ZJV7S4');
-    </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-27J3ZJV7S4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Tajawal:wght@300;400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    gtag('config', 'G-27J3ZJV7S4');
+  </script>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Tajawal:wght@300;400;500;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <script src="projects_data.js"></script>
-  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <body class="text-white">
-    <section class="bg-white" dir="rtl">
-      <div class>
-        <!-- HERO CARD -->
-        <div
-          class="relative overflow-hidden min-h-[360px] sm:min-h-[420px] md:min-h-[460px]"
-        >
-          <!-- ✅ Background image placeholder -->
-          <div
-            class="absolute inset-0 bg-cover bg-center"
-            style="
+  <script src="projects_data.js"></script>
+</head>
+
+<body class="text-white">
+  <section class="bg-white" dir="rtl">
+    <div class>
+      <!-- HERO CARD -->
+      <div class="relative overflow-hidden min-h-[360px] sm:min-h-[420px] md:min-h-[460px]">
+        <!-- ✅ Background image placeholder -->
+        <div class="absolute inset-0 bg-cover bg-center" style="
               background-image: url(&quot;./images/Segmented\ picker.png&quot;);
-            "
-          ></div>
+            "></div>
 
-          <!-- ✅ NAVBAR INSIDE HERO -->
-          <header id="siteHeader" class="fixed inset-x-0 top-0 z-[100]">
-            <div class="px-2 md:px-24 sm:px-6">
-              <div
-                id="navShell"
-                class="mt-4 radius-tr-2 border border-white/10 bg-white/10 backdrop-blur-md transition-all duration-300"
-              >
-                <div
-                  class="flex items-center justify-between px-4 sm:px-6 py-3"
-                >
-                  <!-- LOGO -->
-                  <div class="flex items-center gap-3 pb-3">
-                    <div class="text-right leading-tight">
-                      <a href="index.html">
-                        <img src="./images/Mask group.png" alt="" />
-                      </a>
-                    </div>
+        <!-- ✅ NAVBAR INSIDE HERO -->
+        <header id="siteHeader" class="fixed inset-x-0 top-0 z-[100]">
+          <div class="px-2 md:px-24 sm:px-6">
+            <div id="navShell"
+              class="mt-4 radius-tr-2 border border-white/10 bg-white/10 backdrop-blur-md transition-all duration-300">
+              <div class="flex items-center justify-between px-4 sm:px-6 py-3">
+                <!-- LOGO -->
+                <div class="flex items-center gap-3 pb-3">
+                  <div class="text-right leading-tight">
+                    <a href="index.html">
+                      <img src="./images/Mask group.png" alt="" />
+                    </a>
                   </div>
+                </div>
 
-                  <!-- DESKTOP MENU -->
-                  <nav
-                    class="hidden md:flex items-center gap-2 text-sm font-medium text-white/90"
-                  >
+                <!-- DESKTOP MENU -->
+                <nav class="hidden md:flex items-center gap-2 text-sm font-medium text-white/90">
+                  <a class="nav-link" href="index.html">الرئيسية</a>
+                  <a class="nav-link" href="aboutus.html">من نحن</a>
+                  <a class="nav-link" href="whatwedoo.html">الخدمات</a>
+                  <a class="nav-link is-active" href="projects.html">مشاريعنا</a>
+                  <a class="nav-link" href="contactus.html">تواصل معنا</a>
+                </nav>
+
+                <!-- RIGHT SIDE -->
+                <div class="flex items-center gap-3">
+                  <!-- CTA -->
+                  <a href="https://api.whatsapp.com/send?phone=01004003431" target="_blank"
+                    class="hidden sm:inline-flex items-center justify-center bg-[#c78f2a] px-6 py-3 radius-tr-2 text-sm font-bold text-white hover:bg-[#d39a2f] transition shadow-md hover:shadow-[#c78f2a]/40">
+                    احجز استشارتك
+                  </a>
+
+                  <!-- MOBILE MENU BUTTON -->
+                  <button id="menuBtn"
+                    class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/10 px-3 py-2 text-white/90 hover:bg-white/15 transition"
+                    aria-label="Open Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- MOBILE MENU -->
+              <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+                <div class="mt-2 rounded-2xl border border-white/10 bg-black/20 p-3">
+                  <nav class="flex flex-col gap-1 text-sm font-medium text-white/90">
                     <a class="nav-link" href="index.html">الرئيسية</a>
                     <a class="nav-link" href="aboutus.html">من نحن</a>
                     <a class="nav-link" href="whatwedoo.html">الخدمات</a>
-                    <a class="nav-link is-active" href="projects.html"
-                      >مشاريعنا</a
-                    >
+                    <a class="nav-link is-active" href="projects.html">مشاريعنا</a>
                     <a class="nav-link" href="contactus.html">تواصل معنا</a>
-                  </nav>
 
-                  <!-- RIGHT SIDE -->
-                  <div class="flex items-center gap-3">
-                    <!-- CTA -->
-                    <a
-                      href="https://api.whatsapp.com/send?phone=01004003431"
-                      class="hidden sm:inline-flex items-center justify-center bg-[#c78f2a] px-6 py-3 radius-tr-2 text-sm font-bold text-white hover:bg-[#d39a2f] transition shadow-md hover:shadow-[#c78f2a]/40"
-                    >
+                    <a href="https://api.whatsapp.com/send?phone=01004003431"
+                      class="mt-2 inline-flex items-center justify-center rounded-full bg-[#c78f2a] px-5 py-2 text-sm font-bold text-white hover:bg-[#d39a2f] transition">
                       احجز استشارتك
                     </a>
-
-                    <!-- MOBILE MENU BUTTON -->
-                    <button
-                      id="menuBtn"
-                      class="md:hidden inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/10 px-3 py-2 text-white/90 hover:bg-white/15 transition"
-                      aria-label="Open Menu"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M4 6h16M4 12h16M4 18h16"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- MOBILE MENU -->
-                <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
-                  <div
-                    class="mt-2 rounded-2xl border border-white/10 bg-black/20 p-3"
-                  >
-                    <nav
-                      class="flex flex-col gap-1 text-sm font-medium text-white/90"
-                    >
-                      <a class="nav-link" href="index.html">الرئيسية</a>
-                      <a class="nav-link" href="aboutus.html">من نحن</a>
-                      <a class="nav-link" href="whatwedoo.html">الخدمات</a>
-                      <a class="nav-link is-active" href="projects.html"
-                        >مشاريعنا</a
-                      >
-                      <a class="nav-link" href="contactus.html">تواصل معنا</a>
-
-                      <a
-                        href="https://api.whatsapp.com/send?phone=01004003431"
-                        class="mt-2 inline-flex items-center justify-center rounded-full bg-[#c78f2a] px-5 py-2 text-sm font-bold text-white hover:bg-[#d39a2f] transition"
-                      >
-                        احجز استشارتك
-                      </a>
-                    </nav>
-                  </div>
+                  </nav>
                 </div>
               </div>
             </div>
-          </header>
+          </div>
+        </header>
 
-          <!-- CENTER TEXT -->
-          <div
-            class="relative z-10 h-full flex items-center justify-center text-center px-4 sm:px-6"
-          >
-            <div class="max-w-3xl pt-20 sm:pt-24 md:pt-28">
-              <div class="flex justify-center mb-4">
-                <span
-                  class="inline-flex h-7 w-14 items-center justify-center text-[#B7812A]"
-                >
-                </span>
-              </div>
-
-              <h1
-                class="font-['Noto_Kufi_Arabic'] pt-8 text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-[1.15]"
-              >
-                مشاريعنا
-              </h1>
-
-              <p
-                class="mt-4 font-['Noto_Kufi_Arabic'] text-sm sm:text-base md:text-lg text-white/85 leading-relaxed"
-              >
-                نفخر بإنجازاتنا ومشاريعنا الناجحة في جميع أنحاء المدينة
-              </p>
+        <!-- CENTER TEXT -->
+        <div class="relative z-10 h-full flex items-center justify-center text-center px-4 sm:px-6">
+          <div class="max-w-3xl pt-20 sm:pt-24 md:pt-28">
+            <div class="flex justify-center mb-4">
+              <span class="inline-flex h-7 w-14 items-center justify-center text-[#B7812A]">
+              </span>
             </div>
+
+            <h1
+              class="font-['Noto_Kufi_Arabic'] pt-8 text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-[1.15]">
+              مشاريعنا
+            </h1>
+
+            <p class="mt-4 font-['Noto_Kufi_Arabic'] text-sm sm:text-base md:text-lg text-white/85 leading-relaxed">
+              نفخر بإنجازاتنا ومشاريعنا الناجحة في جميع أنحاء المدينة
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <script>
+    // Active link background (pill)
+    const navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach((link) => {
+      link.classList.add(
+        "px-4",
+        "py-2",
+        "radius-tr-2",
+        "transition",
+        "duration-200",
+        "hover:bg-white/10",
+        "hover:text-white",
+      );
+
+      link.addEventListener("click", () => {
+        navLinks.forEach((l) => l.classList.remove("is-active"));
+        link.classList.add("is-active");
+        applyActiveStyles();
+      });
+    });
+
+    function applyActiveStyles() {
+      navLinks.forEach((l) => {
+        if (l.classList.contains("is-active")) {
+          l.classList.add("bg-[#B7812A]", "text-white");
+          l.classList.remove("text-white/90");
+        } else {
+          l.classList.remove("bg-[#B7812A]");
+          l.classList.add("text-white/90");
+        }
+      });
+    }
+    applyActiveStyles();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
+
+    // On scroll: darken nav background (داخل الهيرو برضو هتشتغل)
+    const navShell = document.getElementById("navShell");
+    function onScroll() {
+      const scrolled = window.scrollY > 20;
+      if (scrolled) {
+        navShell.classList.remove("bg-white/10");
+        navShell.classList.add("bg-black/40", "border-white/15");
+      } else {
+        navShell.classList.remove("bg-black/40", "border-white/15");
+        navShell.classList.add("bg-white/10");
+      }
+    }
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+  </script>
+
+  <!-- Gallery + Filter + Modal Slider (Vanilla JS) -->
+  <section class="bg-white py-14 md:py-20" dir="rtl">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <!-- Top bar -->
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <!-- Style dropdown -->
+        <div class="flex items-center gap-3">
+          <!-- Mobile Filter Icon -->
+          <button id="mobileFilterBtn"
+            class="md:hidden inline-flex items-center justify-center bg-[#f5ead8] text-[#b77a22] px-4 py-3 radius-tr-2 hover:bg-[#e6d5b8] transition shadow-sm border border-[#e6d5b8]"
+            aria-label="Show Filters">
+            <i class="fa-solid fa-filter"></i>
+          </button>
+
+          <div class="relative">
+            <!-- Dropdown -->
+            <div id="styleMenu"
+              class="hidden absolute mt-10 w-48 rounded-2xl justify-start bg-white shadow-xl border border-black/5 overflow-hidden z-50">
+              <button class="style-item" data-style="all">الكل</button>
+              <button class="style-item" data-style="classic">Classic</button>
+              <button class="style-item" data-style="modern">Modern</button>
+              <button class="style-item" data-style="newclassic">
+                New Classic
+              </button>
+            </div>
+
+            <button id="styleBtn"
+              class="inline-flex items-center gap-2 justify-end radius-tr-2 bg-[#B7812A] px-5 py-3 text-sm font-['Noto_Kufi_Arabic'] text-white hover:brightness-110 transition">
+              <span id="styleBtnText">اختر نوع التصميم</span>
+              <i class="fa-solid fa-chevron-down text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Category tabs (Hidden on mobile initially) -->
+        <div id="categoryFilters"
+          class="hidden md:flex md:flex-row md:w-auto md:items-center flex-wrap items-center justify-end gap-3 font-['Noto_Kufi_Arabic'] transition-all">
+          <button class="filter-btn is-active" data-filter="all">الكل</button>
+          <button class="filter-btn" data-filter="interior">
+            تشطيبات داخلية
+          </button>
+          <button class="filter-btn" data-filter="exterior">
+            تشطيبات خارجية
+          </button>
+          <button class="filter-btn" data-filter="furniture">الأثاث</button>
+          <button class="filter-btn" data-filter="kitchen">المطبخ</button>
+          <button class="filter-btn" data-filter="3dmax">3D Max</button>
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div id="galleryGrid" class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Cards will be injected dynamically via JS -->
+      </div>
+    </div>
+
+    <div id="modal" class="fixed inset-0 z-[999] hidden">
+      <div id="modalOverlay" class="absolute inset-0 bg-black/70"></div>
+
+      <div class="relative z-10 mx-auto flex min-h-screen max-w-6xl items-center justify-center px-4 py-10">
+        <div class="w-full overflow-hidden rounded-3xl bg-white shadow-2xl">
+          <!-- Header -->
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between px-6 py-5 border-b">
+            <div class="text-right">
+              <div id="modalTitle" class="font-['Noto_Kufi_Arabic'] font-bold text-zinc-900 text-lg"></div>
+              <div id="modalDesc" class="font-['Noto_Kufi_Arabic'] text-sm text-zinc-500 mt-1"></div>
+            </div>
+
+            <div class="flex items-center justify-between sm:justify-end gap-3">
+              <div id="counter"
+                class="inline-flex items-center gap-2 rounded-full bg-zinc-100 px-4 py-2 text-xs text-zinc-700">
+                <i class="fa-regular fa-images"></i>
+                <span id="counterText">1 / 1</span>
+              </div>
+
+              <button id="closeModal"
+                class="h-10 w-10 rounded-2xl bg-zinc-900 text-white hover:bg-zinc-800 sm:bg-zinc-100 sm:text-zinc-900 sm:hover:bg-zinc-200 transition flex items-center justify-center shadow-lg sm:shadow-none border border-white/20 sm:border-transparent"
+                aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="relative bg-black min-h-[300px] flex items-center justify-center">
+            <!-- Loading Spinner -->
+            <div id="modalLoading"
+              class="absolute inset-0 flex items-center justify-center z-20 bg-black/20 backdrop-blur-sm">
+              <div class="w-10 h-10 border-4 border-t-[#B7812A] border-white/20 rounded-full animate-spin"></div>
+            </div>
+
+            <img id="modalImg" src="" alt="Preview"
+              class="w-full max-h-[72vh] object-contain opacity-0 transition-opacity duration-300" />
+
+            <!-- Prev/Next -->
+            <button id="prevBtn" class="nav-btn absolute left-4 top-1/2 -translate-y-1/2" aria-label="Previous">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <button id="nextBtn" class="nav-btn absolute right-4 top-1/2 -translate-y-1/2" aria-label="Next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Thumbs -->
+          <div id="thumbs" class="flex gap-2 overflow-x-auto px-5 py-4 bg-white"></div>
+        </div>
+      </div>
+    </div>
 
     <script>
-      // Active link background (pill)
-      const navLinks = document.querySelectorAll(".nav-link");
-      navLinks.forEach((link) => {
-        link.classList.add(
-          "px-4",
-          "py-2",
-          "radius-tr-2",
-          "transition",
-          "duration-200",
-          "hover:bg-white/10",
-          "hover:text-white",
-        );
+      document.addEventListener("DOMContentLoaded", () => {
+        // ===== Render Dynamic Cards =====
+        const grid = document.getElementById("galleryGrid");
 
-        link.addEventListener("click", () => {
-          navLinks.forEach((l) => l.classList.remove("is-active"));
-          link.classList.add("is-active");
-          applyActiveStyles();
-        });
-      });
+        if (
+          typeof projectData !== "undefined" &&
+          Array.isArray(projectData)
+        ) {
+          grid.innerHTML = projectData
+            .map((item) => {
+              // Escape single quotes for data-images attribute (simple JSON stringify is usually enough if no single quotes in URLs)
+              const imagesJson = JSON.stringify(item.images).replace(
+                /'/g,
+                "&apos;",
+              );
 
-      function applyActiveStyles() {
-        navLinks.forEach((l) => {
-          if (l.classList.contains("is-active")) {
-            l.classList.add("bg-[#B7812A]", "text-white");
-            l.classList.remove("text-white/90");
-          } else {
-            l.classList.remove("bg-[#B7812A]");
-            l.classList.add("text-white/90");
-          }
-        });
-      }
-      applyActiveStyles();
-
-      // Mobile menu toggle
-      const menuBtn = document.getElementById("menuBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
-      if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener("click", () => {
-          mobileMenu.classList.toggle("hidden");
-        });
-      }
-
-      // On scroll: darken nav background (داخل الهيرو برضو هتشتغل)
-      const navShell = document.getElementById("navShell");
-      function onScroll() {
-        const scrolled = window.scrollY > 20;
-        if (scrolled) {
-          navShell.classList.remove("bg-white/10");
-          navShell.classList.add("bg-black/40", "border-white/15");
-        } else {
-          navShell.classList.remove("bg-black/40", "border-white/15");
-          navShell.classList.add("bg-white/10");
-        }
-      }
-      window.addEventListener("scroll", onScroll);
-      onScroll();
-    </script>
-
-    <!-- Gallery + Filter + Modal Slider (Vanilla JS) -->
-    <section class="bg-white py-14 md:py-20" dir="rtl">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6">
-        <!-- Top bar -->
-        <div
-          class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
-        >
-          <!-- Style dropdown -->
-          <div class="flex items-center gap-3">
-            <!-- Mobile Filter Icon -->
-            <button
-              id="mobileFilterBtn"
-              class="md:hidden inline-flex items-center justify-center bg-[#f5ead8] text-[#b77a22] px-4 py-3 radius-tr-2 hover:bg-[#e6d5b8] transition shadow-sm border border-[#e6d5b8]"
-              aria-label="Show Filters"
-            >
-              <i class="fa-solid fa-filter"></i>
-            </button>
-
-            <div class="relative">
-              <!-- Dropdown -->
-              <div
-                id="styleMenu"
-                class="hidden absolute mt-10 w-48 rounded-2xl justify-start bg-white shadow-xl border border-black/5 overflow-hidden z-50"
-              >
-                <button class="style-item" data-style="all">الكل</button>
-                <button class="style-item" data-style="classic">Classic</button>
-                <button class="style-item" data-style="modern">Modern</button>
-                <button class="style-item" data-style="newclassic">
-                  New Classic
-                </button>
-              </div>
-
-              <button
-                id="styleBtn"
-                class="inline-flex items-center gap-2 justify-end radius-tr-2 bg-[#B7812A] px-5 py-3 text-sm font-['Noto_Kufi_Arabic'] text-white hover:brightness-110 transition"
-              >
-                <span id="styleBtnText">اختر نوع التصميم</span>
-                <i class="fa-solid fa-chevron-down text-xs"></i>
-              </button>
-            </div>
-          </div>
-
-          <!-- Category tabs (Hidden on mobile initially) -->
-          <div
-            id="categoryFilters"
-            class="hidden md:flex md:flex-row md:w-auto md:items-center flex-wrap items-center justify-end gap-3 font-['Noto_Kufi_Arabic'] transition-all"
-          >
-            <button class="filter-btn is-active" data-filter="all">الكل</button>
-            <button class="filter-btn" data-filter="interior">
-              تشطيبات داخلية
-            </button>
-            <button class="filter-btn" data-filter="exterior">
-              تشطيبات خارجية
-            </button>
-            <button class="filter-btn" data-filter="furniture">الأثاث</button>
-            <button class="filter-btn" data-filter="kitchen">المطبخ</button>
-            <button class="filter-btn" data-filter="3dmax">3D Max</button>
-          </div>
-        </div>
-
-        <!-- Grid -->
-        <div
-          id="galleryGrid"
-          class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
-        >
-          <!-- Cards will be injected dynamically via JS -->
-        </div>
-      </div>
-
-      <div id="modal" class="fixed inset-0 z-[999] hidden">
-        <div id="modalOverlay" class="absolute inset-0 bg-black/70"></div>
-
-        <div
-          class="relative z-10 mx-auto flex min-h-screen max-w-6xl items-center justify-center px-4 py-10"
-        >
-          <div class="w-full overflow-hidden rounded-3xl bg-white shadow-2xl">
-            <!-- Header -->
-            <div
-              class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between px-6 py-5 border-b"
-            >
-              <div class="text-right">
-                <div
-                  id="modalTitle"
-                  class="font-['Noto_Kufi_Arabic'] font-bold text-zinc-900 text-lg"
-                ></div>
-                <div
-                  id="modalDesc"
-                  class="font-['Noto_Kufi_Arabic'] text-sm text-zinc-500 mt-1"
-                ></div>
-              </div>
-
-              <div
-                class="flex items-center justify-between sm:justify-end gap-3"
-              >
-                <div
-                  id="counter"
-                  class="inline-flex items-center gap-2 rounded-full bg-zinc-100 px-4 py-2 text-xs text-zinc-700"
-                >
-                  <i class="fa-regular fa-images"></i>
-                  <span id="counterText">1 / 1</span>
-                </div>
-
-                <button
-                  id="closeModal"
-                  class="h-10 w-10 rounded-2xl bg-zinc-900 text-white hover:bg-zinc-800 sm:bg-zinc-100 sm:text-zinc-900 sm:hover:bg-zinc-200 transition flex items-center justify-center shadow-lg sm:shadow-none border border-white/20 sm:border-transparent"
-                  aria-label="Close"
-                >
-                  <i class="fa-solid fa-xmark"></i>
-                </button>
-              </div>
-            </div>
-
-            <!-- Body -->
-            <div
-              class="relative bg-black min-h-[300px] flex items-center justify-center"
-            >
-              <!-- Loading Spinner -->
-              <div
-                id="modalLoading"
-                class="absolute inset-0 flex items-center justify-center z-20 bg-black/20 backdrop-blur-sm"
-              >
-                <div
-                  class="w-10 h-10 border-4 border-t-[#B7812A] border-white/20 rounded-full animate-spin"
-                ></div>
-              </div>
-
-              <img
-                id="modalImg"
-                src=""
-                alt="Preview"
-                class="w-full max-h-[72vh] object-contain opacity-0 transition-opacity duration-300"
-              />
-
-              <!-- Prev/Next -->
-              <button
-                id="prevBtn"
-                class="nav-btn absolute left-4 top-1/2 -translate-y-1/2"
-                aria-label="Previous"
-              >
-                <i class="fa-solid fa-chevron-left"></i>
-              </button>
-
-              <button
-                id="nextBtn"
-                class="nav-btn absolute right-4 top-1/2 -translate-y-1/2"
-                aria-label="Next"
-              >
-                <i class="fa-solid fa-chevron-right"></i>
-              </button>
-            </div>
-
-            <!-- Thumbs -->
-            <div
-              id="thumbs"
-              class="flex gap-2 overflow-x-auto px-5 py-4 bg-white"
-            ></div>
-          </div>
-        </div>
-      </div>
-
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          // ===== Render Dynamic Cards =====
-          const grid = document.getElementById("galleryGrid");
-
-          if (
-            typeof projectData !== "undefined" &&
-            Array.isArray(projectData)
-          ) {
-            grid.innerHTML = projectData
-              .map((item) => {
-                // Escape single quotes for data-images attribute (simple JSON stringify is usually enough if no single quotes in URLs)
-                const imagesJson = JSON.stringify(item.images).replace(
-                  /'/g,
-                  "&apos;",
-                );
-
-                return `
+              return `
           <article class="gallery-card" data-cat="${item.category}" data-style="${item.style}"
             data-title="${item.title}"
             data-desc="${item.desc}"
@@ -443,355 +342,336 @@
             </div>
           </article>
           `;
-              })
-              .join("");
-          } else {
-            console.error("projectData is missing or invalid.");
-          }
+            })
+            .join("");
+        } else {
+          console.error("projectData is missing or invalid.");
+        }
 
-          // ===== State =====
-          let activeCategory = "all";
-          let activeStyle = "all";
-          const cards = Array.from(document.querySelectorAll(".gallery-card"));
+        // ===== State =====
+        let activeCategory = "all";
+        let activeStyle = "all";
+        const cards = Array.from(document.querySelectorAll(".gallery-card"));
 
-          // ===== Category Tabs =====
-          const catBtns = document.querySelectorAll(".filter-btn");
-          catBtns.forEach((b) => {
-            b.addEventListener("click", () => {
-              catBtns.forEach((x) => x.classList.remove("is-active"));
-              b.classList.add("is-active");
-              activeCategory = b.dataset.filter;
-              applyFilters();
-            });
-          });
-
-          // ===== Style Dropdown =====
-          const styleBtn = document.getElementById("styleBtn");
-          const styleBtnText = document.getElementById("styleBtnText");
-          const styleMenu = document.getElementById("styleMenu");
-
-          styleBtn.addEventListener("click", (e) => {
-            e.stopPropagation();
-            styleMenu.classList.toggle("hidden");
-          });
-
-          document.querySelectorAll(".style-item").forEach((item) => {
-            item.addEventListener("click", (e) => {
-              const v = item.dataset.style;
-              activeStyle = v;
-
-              // label
-              styleBtnText.textContent =
-                v === "all"
-                  ? "اختر نوع التصميم"
-                  : v === "classic"
-                    ? "Classic"
-                    : v === "modern"
-                      ? "Modern"
-                      : "New Classic";
-
-              styleMenu.classList.add("hidden");
-              applyFilters();
-            });
-          });
-
-          document.addEventListener("click", () =>
-            styleMenu.classList.add("hidden"),
-          );
-
-          // ===== Mobile Filter Toggle =====
-          const mobileFilterBtn = document.getElementById("mobileFilterBtn");
-          const categoryFilters = document.getElementById("categoryFilters");
-
-          if (mobileFilterBtn && categoryFilters) {
-            mobileFilterBtn.addEventListener("click", (e) => {
-              e.stopPropagation(); // prevent closing style menu if any
-              // Toggle hidden/flex for mobile
-              if (categoryFilters.classList.contains("hidden")) {
-                categoryFilters.classList.remove("hidden");
-                categoryFilters.classList.add(
-                  "flex",
-                  "flex-col",
-                  "w-full",
-                  "items-stretch",
-                );
-              } else {
-                categoryFilters.classList.add("hidden");
-                categoryFilters.classList.remove(
-                  "flex",
-                  "flex-col",
-                  "w-full",
-                  "items-stretch",
-                );
-              }
-            });
-          }
-
-          function applyFilters() {
-            cards.forEach((card) => {
-              const catOk =
-                activeCategory === "all" || card.dataset.cat === activeCategory;
-              const styleOk =
-                activeStyle === "all" || card.dataset.style === activeStyle;
-              card.style.display = catOk && styleOk ? "" : "none";
-            });
-          }
-
-          // ===== Modal Slider =====
-          const modal = document.getElementById("modal");
-          const modalOverlay = document.getElementById("modalOverlay");
-          const closeModal = document.getElementById("closeModal");
-          const modalImg = document.getElementById("modalImg");
-          const modalTitle = document.getElementById("modalTitle");
-          const modalDesc = document.getElementById("modalDesc");
-          const thumbsWrap = document.getElementById("thumbs");
-          const prevBtn = document.getElementById("prevBtn");
-          const nextBtn = document.getElementById("nextBtn");
-          const counterText = document.getElementById("counterText");
-
-          let images = [];
-          let idx = 0;
-
-          function parseImages(raw) {
-            if (!raw) return [];
-            try {
-              const j = JSON.parse(raw);
-              return Array.isArray(j) ? j : [];
-            } catch (e) {
-              return raw
-                .split(",")
-                .map((s) => s.trim())
-                .filter(Boolean);
-            }
-          }
-
-          function renderThumbs() {
-            thumbsWrap.innerHTML = "";
-            images.forEach((src, i) => {
-              const t = document.createElement("img");
-              t.src = src;
-              t.alt = "thumb";
-              t.className = i === idx ? "active" : "";
-              t.addEventListener("click", () => {
-                idx = i;
-                update();
-              });
-              thumbsWrap.appendChild(t);
-            });
-          }
-
-          const modalLoading = document.getElementById("modalLoading");
-
-          function update() {
-            modalLoading.classList.remove("hidden");
-            modalImg.classList.add("opacity-0");
-
-            modalImg.src = images[idx];
-
-            modalImg.onload = () => {
-              modalLoading.classList.add("hidden");
-              modalImg.classList.remove("opacity-0");
-            };
-
-            counterText.textContent = `${idx + 1} / ${images.length}`;
-            Array.from(thumbsWrap.querySelectorAll("img")).forEach((img, i) => {
-              img.classList.toggle("active", i === idx);
-            });
-          }
-
-          function openModalFromCard(card) {
-            images = parseImages(card.dataset.images);
-            if (!images.length) return;
-
-            idx = 0;
-            modalTitle.textContent = card.dataset.title || "";
-            modalDesc.textContent = card.dataset.desc || "";
-
-            modal.classList.remove("hidden");
-            document.body.style.overflow = "hidden";
-
-            renderThumbs();
-            update();
-          }
-
-          function hideModal() {
-            modal.classList.add("hidden");
-            document.body.style.overflow = "";
-            thumbsWrap.innerHTML = "";
-            modalImg.src = "";
-            images = [];
-            idx = 0;
-          }
-
-          // open by clicking eye (delegation)
-          grid.addEventListener("click", (e) => {
-            const eye = e.target.closest(".eye-btn");
-            if (!eye) return;
-            const card = eye.closest(".gallery-card");
-            if (card) openModalFromCard(card);
-          });
-
-          // close
-          closeModal.addEventListener("click", hideModal);
-          modalOverlay.addEventListener("click", hideModal);
-
-          // prev/next
-          prevBtn.addEventListener("click", () => {
-            if (!images.length) return;
-            idx = (idx - 1 + images.length) % images.length;
-            update();
-          });
-          nextBtn.addEventListener("click", () => {
-            if (!images.length) return;
-            idx = (idx + 1) % images.length;
-            update();
-          });
-
-          // keyboard
-          window.addEventListener("keydown", (e) => {
-            if (modal.classList.contains("hidden")) return;
-            if (e.key === "Escape") hideModal();
-            if (e.key === "ArrowLeft") prevBtn.click();
-            if (e.key === "ArrowRight") nextBtn.click();
+        // ===== Category Tabs =====
+        const catBtns = document.querySelectorAll(".filter-btn");
+        catBtns.forEach((b) => {
+          b.addEventListener("click", () => {
+            catBtns.forEach((x) => x.classList.remove("is-active"));
+            b.classList.add("is-active");
+            activeCategory = b.dataset.filter;
+            applyFilters();
           });
         });
-      </script>
-    </section>
 
-    <footer class="relative overflow-hidden text-white" dir="rtl">
-      <!-- Background -->
-      <div
-        class="absolute inset-0 bg-cover bg-center"
-        style="
+        // ===== Style Dropdown =====
+        const styleBtn = document.getElementById("styleBtn");
+        const styleBtnText = document.getElementById("styleBtnText");
+        const styleMenu = document.getElementById("styleMenu");
+
+        styleBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          styleMenu.classList.toggle("hidden");
+        });
+
+        document.querySelectorAll(".style-item").forEach((item) => {
+          item.addEventListener("click", (e) => {
+            const v = item.dataset.style;
+            activeStyle = v;
+
+            // label
+            styleBtnText.textContent =
+              v === "all"
+                ? "اختر نوع التصميم"
+                : v === "classic"
+                  ? "Classic"
+                  : v === "modern"
+                    ? "Modern"
+                    : "New Classic";
+
+            styleMenu.classList.add("hidden");
+            applyFilters();
+          });
+        });
+
+        document.addEventListener("click", () =>
+          styleMenu.classList.add("hidden"),
+        );
+
+        // ===== Mobile Filter Toggle =====
+        const mobileFilterBtn = document.getElementById("mobileFilterBtn");
+        const categoryFilters = document.getElementById("categoryFilters");
+
+        if (mobileFilterBtn && categoryFilters) {
+          mobileFilterBtn.addEventListener("click", (e) => {
+            e.stopPropagation(); // prevent closing style menu if any
+            // Toggle hidden/flex for mobile
+            if (categoryFilters.classList.contains("hidden")) {
+              categoryFilters.classList.remove("hidden");
+              categoryFilters.classList.add(
+                "flex",
+                "flex-col",
+                "w-full",
+                "items-stretch",
+              );
+            } else {
+              categoryFilters.classList.add("hidden");
+              categoryFilters.classList.remove(
+                "flex",
+                "flex-col",
+                "w-full",
+                "items-stretch",
+              );
+            }
+          });
+        }
+
+        function applyFilters() {
+          cards.forEach((card) => {
+            const catOk =
+              activeCategory === "all" || card.dataset.cat === activeCategory;
+            const styleOk =
+              activeStyle === "all" || card.dataset.style === activeStyle;
+            card.style.display = catOk && styleOk ? "" : "none";
+          });
+        }
+
+        // ===== Modal Slider =====
+        const modal = document.getElementById("modal");
+        const modalOverlay = document.getElementById("modalOverlay");
+        const closeModal = document.getElementById("closeModal");
+        const modalImg = document.getElementById("modalImg");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDesc = document.getElementById("modalDesc");
+        const thumbsWrap = document.getElementById("thumbs");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const counterText = document.getElementById("counterText");
+
+        let images = [];
+        let idx = 0;
+
+        function parseImages(raw) {
+          if (!raw) return [];
+          try {
+            const j = JSON.parse(raw);
+            return Array.isArray(j) ? j : [];
+          } catch (e) {
+            return raw
+              .split(",")
+              .map((s) => s.trim())
+              .filter(Boolean);
+          }
+        }
+
+        function renderThumbs() {
+          thumbsWrap.innerHTML = "";
+          images.forEach((src, i) => {
+            const t = document.createElement("img");
+            t.src = src;
+            t.alt = "thumb";
+            t.className = i === idx ? "active" : "";
+            t.addEventListener("click", () => {
+              idx = i;
+              update();
+            });
+            thumbsWrap.appendChild(t);
+          });
+        }
+
+        const modalLoading = document.getElementById("modalLoading");
+
+        function update() {
+          modalLoading.classList.remove("hidden");
+          modalImg.classList.add("opacity-0");
+
+          modalImg.src = images[idx];
+
+          modalImg.onload = () => {
+            modalLoading.classList.add("hidden");
+            modalImg.classList.remove("opacity-0");
+          };
+
+          counterText.textContent = `${idx + 1} / ${images.length}`;
+          Array.from(thumbsWrap.querySelectorAll("img")).forEach((img, i) => {
+            img.classList.toggle("active", i === idx);
+          });
+        }
+
+        function openModalFromCard(card) {
+          images = parseImages(card.dataset.images);
+          if (!images.length) return;
+
+          idx = 0;
+          modalTitle.textContent = card.dataset.title || "";
+          modalDesc.textContent = card.dataset.desc || "";
+
+          modal.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+
+          renderThumbs();
+          update();
+        }
+
+        function hideModal() {
+          modal.classList.add("hidden");
+          document.body.style.overflow = "";
+          thumbsWrap.innerHTML = "";
+          modalImg.src = "";
+          images = [];
+          idx = 0;
+        }
+
+        // open by clicking eye (delegation)
+        grid.addEventListener("click", (e) => {
+          const eye = e.target.closest(".eye-btn");
+          if (!eye) return;
+          const card = eye.closest(".gallery-card");
+          if (card) openModalFromCard(card);
+        });
+
+        // close
+        closeModal.addEventListener("click", hideModal);
+        modalOverlay.addEventListener("click", hideModal);
+
+        // prev/next
+        prevBtn.addEventListener("click", () => {
+          if (!images.length) return;
+          idx = (idx - 1 + images.length) % images.length;
+          update();
+        });
+        nextBtn.addEventListener("click", () => {
+          if (!images.length) return;
+          idx = (idx + 1) % images.length;
+          update();
+        });
+
+        // keyboard
+        window.addEventListener("keydown", (e) => {
+          if (modal.classList.contains("hidden")) return;
+          if (e.key === "Escape") hideModal();
+          if (e.key === "ArrowLeft") prevBtn.click();
+          if (e.key === "ArrowRight") nextBtn.click();
+        });
+      });
+    </script>
+  </section>
+
+  <footer class="relative overflow-hidden text-white" dir="rtl">
+    <!-- Background -->
+    <div class="absolute inset-0 bg-cover bg-center" style="
           background-image: url(&quot;./images/Frame\ 2147224260.png&quot;);
           border-radius: 50px 50px 0 0;
-        "
-      ></div>
+        "></div>
 
-      <!-- Overlay -->
-      <div class="absolute inset-0"></div>
+    <!-- Overlay -->
+    <div class="absolute inset-0"></div>
 
-      <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 py-12 md:py-16">
-        <div class="grid gap-10 lg:grid-cols-3 items-start">
-          <!-- ✅ RIGHT: Brand -->
-          <div class="text-right">
-            <div class="flex items-center justify-start gap-3 mb-4">
-              <img src="./images/Group 10.png" alt="Buildex" />
-            </div>
-
-            <p
-              class="text-sm text-white/80 leading-relaxed font-['Noto_Kufi_Arabic']"
-            >
-              نقدم خدمات التصميم والتشطيب متكاملة، مع الاهتمام بأعلى معايير
-              الدقة والجودة، والتنفيذ الاحترافي من الفكرة حتى التسليم.
-            </p>
-
-            <!-- Social -->
-              <div class="mt-6 flex justify-start gap-3">
-              <a
-                href="https://www.facebook.com/BuildexArchitecture" target="_blank"
-                class="footer-icon"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/buildexarchitecture/" target="_blank" 
-                  class="footer-icon"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                href="https://api.whatsapp.com/send?phone=+201004003431" target="_blank"
-                class="footer-icon"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
-              <a
-                href="https://www.tiktok.com/@buildex_architecture"target="_blank"
-                class="footer-icon"
-                ><i class="fa-brands fa-tiktok"></i
-              ></a>
-            </div>
+    <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 py-12 md:py-16">
+      <div class="grid gap-10 lg:grid-cols-3 items-start">
+        <!-- ✅ RIGHT: Brand -->
+        <div class="text-right">
+          <div class="flex items-center justify-start gap-3 mb-4">
+            <img src="./images/Group 10.png" alt="Buildex" />
           </div>
 
-          <!-- ✅ CENTER: Links -->
-          <div class="text-right mx-0 sm:mx-0 md:mx-auto lg:mx-auto">
-            <h3 class="font-['Noto_Kufi_Arabic'] text-[#B7812A] font-bold mb-5">
-              روابط سريعة
-            </h3>
+          <p class="text-sm text-white/80 leading-relaxed font-['Noto_Kufi_Arabic']">
+            نقدم خدمات التصميم والتشطيب متكاملة، مع الاهتمام بأعلى معايير
+            الدقة والجودة، والتنفيذ الاحترافي من الفكرة حتى التسليم.
+          </p>
 
-            <ul class="space-y-3 text-sm justify-start text-white/85">
-              <li><a href="index.html">الرئيسية</a></li>
-              <li><a href="aboutus.html">من نحن</a></li>
-              <li><a href="whatwedoo.html">الخدمات</a></li>
-              <li><a href="projects.html">المشاريع</a></li>
-              <li><a href="contactus.html">تواصل معنا</a></li>
-            </ul>
-          </div>
-
-          <!-- ✅ LEFT: Contact -->
-          <div class="text-right">
-            <h3 class="font-['Noto_Kufi_Arabic'] text-[#B7812A] font-bold mb-5">
-              معلومات التواصل
-            </h3>
-
-            <div class="space-y-4 text-sm text-white/85">
-              <div class="flex items-center gap-3">
-                <span class="footer-icon">
-                  <i class="fa-solid fa-phone"></i>
-                </span>
-                <a href="tel:+201004003431" dir="ltr">+201004003431</a>
-              </div>
-
-              <div class="flex items-center gap-3">
-                <span class="footer-icon">
-                  <i class="fa-solid fa-envelope"></i>
-                </span>
-                <a href="mailto:buildexarchitecture@gmail.com"
-                  >buildexarchitecture@gmail.com</a
-                >
-              </div>
-
-              <div class="flex items-start gap-3">
-                <span class="footer-icon mt-1">
-                  <i class="fa-solid fa-location-dot"></i>
-                </span>
-                <p>
-                  دمياط الجديدة، الحي الثالث<br />
-                  مجاورة 17، منتصف شارع اللبان
-                </p>
-              </div>
-            </div>
+          <!-- Social -->
+          <div class="mt-6 flex justify-start gap-3">
+            <a href="https://www.facebook.com/BuildexArchitecture" target="_blank" class="footer-icon"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/buildexarchitecture/" target="_blank" class="footer-icon"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=01004003431" target="_blank" class="footer-icon"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@buildex_architecture" target="_blank" class="footer-icon"><i
+                class="fa-brands fa-tiktok"></i></a>
           </div>
         </div>
 
-        <!-- Bottom -->
-        <div
-          class="mt-10 pt-6 border-t border-white/10 text-center text-xs text-white/70 font-['Noto_Kufi_Arabic']"
-        >
-          حقوق النشر © 2025 Buildex – جميع الحقوق محفوظة
+        <!-- ✅ CENTER: Links -->
+        <div class="text-right mx-0 sm:mx-0 md:mx-auto lg:mx-auto">
+          <h3 class="font-['Noto_Kufi_Arabic'] text-[#B7812A] font-bold mb-5">
+            روابط سريعة
+          </h3>
+
+          <ul class="space-y-3 text-sm justify-start text-white/85">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="aboutus.html">من نحن</a></li>
+            <li><a href="whatwedoo.html">الخدمات</a></li>
+            <li><a href="projects.html">المشاريع</a></li>
+            <li><a href="contactus.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <!-- ✅ LEFT: Contact -->
+        <div class="text-right">
+          <h3 class="font-['Noto_Kufi_Arabic'] text-[#B7812A] font-bold mb-5">
+            معلومات التواصل
+          </h3>
+
+          <div class="space-y-4 text-sm text-white/85">
+            <div class="flex items-center gap-3">
+              <span class="footer-icon">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <a href="tel:+201004003431" dir="ltr">+201004003431</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <span class="footer-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <a href="mailto:buildexarchitecture@gmail.com">buildexarchitecture@gmail.com</a>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <span class="footer-icon mt-1">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              <p>
+                دمياط الجديدة، الحي الثالث<br />
+                مجاورة 17، منتصف شارع اللبان
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- 🎨 ICON STYLE -->
-      <style>
-        .footer-icon {
-          width: 40px;
-          height: 40px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 0 5px 5px 5px;
-          background: linear-gradient(135deg, #c89b3c, #9a6b1e);
-          color: #fff;
-          font-size: 16px;
-          transition: 0.3s ease;
-        }
-        .footer-icon:hover {
-          transform: translateY(-2px);
-          opacity: 0.9;
-        }
-      </style>
-    </footer>
+      <!-- Bottom -->
+      <div class="mt-10 pt-6 border-t border-white/10 text-center text-xs text-white/70 font-['Noto_Kufi_Arabic']">
+        حقوق النشر © 2025 Buildex – جميع الحقوق محفوظة
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
-  </body>
+    <!-- 🎨 ICON STYLE -->
+    <style>
+      .footer-icon {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 5px 5px 5px;
+        background: linear-gradient(135deg, #c89b3c, #9a6b1e);
+        color: #fff;
+        font-size: 16px;
+        transition: 0.3s ease;
+      }
+
+      .footer-icon:hover {
+        transform: translateY(-2px);
+        opacity: 0.9;
+      }
+    </style>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
